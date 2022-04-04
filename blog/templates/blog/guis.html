@@ -1,0 +1,118 @@
+{% extends "blog/base.html" %}
+
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>{% block title %}Python GUI's!{% endblock %}</title>
+    </head>
+
+    <body>
+    {% block content %}
+
+    <!--h1>Timer</h1>
+    <p>some image</p-->
+
+
+
+    <!-- Header content -->
+    <div class="header">
+        <h1>Tailor-made programs</h1>
+        <h5> 
+            Creating GUI's in python is how my programming adventure started. 
+        </h5>
+    </div>
+
+    <h2 class="section-heading">Stand-alone executable</h2>
+        <div class="column-1" style='height:800px;'>
+
+            <h1 class="inside-heading">Automatic work report PDF</h1>
+
+            <div class="grid-content">
+                <div class="img-grid" style="width:400px;height:auto;">
+                    {% load static %}
+                    <img src="{% static 'pdf_report.png' %}" alt="pdf report image"></img>
+                </div>
+                <p style="padding-left:250px;">
+                Time saving is a valuable perk in most work places.
+                This program came out as a response for the paperwork
+                created during production requiring analysis and 
+                sensible data categorization. This executable allows you to 
+                create a time-stamp and log your process information 
+                automatically, then auto-generate a PDF report with raw data.
+                Save hours of paperwork with a single click.
+                <br>
+                <br>
+                <br>
+                <br>
+                <a target="_blank" rel="noopener noreferrer" class="btn-white linkedin" href="https://www.linkedin.com/in/tomas-chacon-76560993/">Source code</a>
+                </p>
+            </div>
+        </div>
+<!--div class="section-break"> </div-->
+<!--Section two: global -->
+
+    <h2 class="section-heading">More Software</h2>
+    <div class="column-1" style='height:1200px;'>
+        <h1 class="inside-heading">Text-to-Binary translator</h1>
+
+        <div class="grid-content">
+            <div class="img-grid">
+                    <img src="{% static 'bnr-trans-img.png' %}" alt="binary translator image"></img>
+            </div>
+            <p style="padding-left:250px;">
+                
+                As an approach to algorithmns in cybersecurity as eliptical curves and encryption, this project is a first step into more complex forms of data-hashing.
+                Dictionaries and translators are a good way to do basic data manipulation.
+
+                <br>
+                <br>
+                <br>
+                <br>
+                <a target="_blank" rel="noopener noreferrer" class="btn-white linkedin" href="https://www.linkedin.com/in/tomas-chacon-76560993/">Source code</a>
+            </p>
+        </div>
+
+    <!--div class="column-1" style='height:550px;'-->
+        <h1 class="inside-heading">Timer & Lap count</h1>
+
+        <div class="grid-content">
+            <div class="img-grid">
+                    {% load static %}
+                    <img src="{% static 'timer-img.png' %}" alt="timer image"></img>
+            </div>
+            <p style="padding-left:250px;">
+            The ability to control time is a power many people would like to have.
+            This project came as one of my earliest approches to Tkinter. A timer was chosen 
+            because is a good way of understanding loops and if statements while learning Python.
+                <br>
+                <br>
+                <br>
+                <br>
+                <a target="_blank" rel="noopener noreferrer" class="btn-white linkedin" href="https://www.linkedin.com/in/tomas-chacon-76560993/">Source code</a>
+            </p>
+        </div>
+    <!--/div-->
+    </div>
+
+    <h2 class="section-heading"> </h2>
+
+
+    <!-- footer -->
+<div class="footer">
+        <p class="footer-text-left">
+        <a href="{{ "/" }}" class="menu" target="_blank">CV</a>
+        <a href="{{ "graphs.html" }}" class="menu">Graphs</a>
+        </p>
+
+        <div class="footer-content-right">
+        <a href="https://github.com/westoleaboat" target="_blank">
+            {% load static %}
+            <img src="{% static 'githublogo.png' %}" class='icon-style' alt="github logo"></img></a>
+
+    </div>
+    </div>
+
+{% endblock %}
+</body>
+</html>

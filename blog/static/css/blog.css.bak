@@ -1,0 +1,140 @@
+header {
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+body {
+    margin-bottom: 20px;
+    height: 100%;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+    color: white;
+    background: black;
+    margin-bottom: 0;
+    position: absolute;
+}
+
+h1 {
+    font-family: "Lucida Console", monospace;
+}
+
+h3 {
+    font-family: "Courier New", monospace;
+    font-size: 19px;
+}
+
+.block-container {
+    background-color: lightblue
+}
+
+
+.welcome-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 6em;
+    position: relative;
+}
+
+.title {
+    text-align: left;
+    /*font-family: "Ubuntu", sans-serif;*/
+
+}
+
+.btn-white {
+    color: #fff;
+    text-decoration: none;
+    border: 3px solid #fff;
+    padding: .7rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: #f7b;
+    cursor: pointer;
+    margin-top; .8rem;
+    font-family: "DM sans", sans-serif;
+}
+
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.overlay {
+    z-index: 9;
+
+}
+
+.color-row {
+    background-color: #72efe9;
+    height: 242px;
+    width: 100%;
+    margin-top: -70px;
+    position: relative;
+    text-align: right;
+}
+
+
+.menu {
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+
+}
+
+.grid-item {
+    background-color: rgba(225, 225, 255, 0.8);
+    /*border: 1px solid rgba(0, 0, 0, 0.8);*/
+    padding-top: 20px;
+    /*padding-bottom: 0px;*/
+    text-align: center;
+}
+
+.menu-item {
+    /*font-size: 1.5rem;*/
+    padding: 10px;
+    text-align: center;
+}
+
+.content-title {
+    text-align: center;
+}
+
+.content-item {
+    padding: 20px;
+    margin: 5px;
+    /*background-color: burlywood;*/
+    border-radius: 10px;
+}
+
+.topic-container {
+    justify-content: center;
+    background: grey;
+    margin: auto;
+    height: 1550px;
+    width: 1200px;
+    height: 100%;
+}
+
+.topic-container-small {
+    text-align: center;
+    justify-content: center;
+    background: white;
+}
