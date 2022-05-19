@@ -168,14 +168,15 @@ a {
 }
 
 
-/* Large profile image */
+/* Large profile image 
 .large-profile {
     background: url("{% static 'cv-big-photo2.png' %}");
-    /*background-size: cover;*/
+    background-size: cover;
     background-position: center;
     width:450;
     height:450;
 }
+*/
 
 /* Section 3 projects*/
 .section-heading {
