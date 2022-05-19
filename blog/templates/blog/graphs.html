@@ -1,0 +1,107 @@
+{% extends "blog/base.html" %}
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{% block title %}Python graphs{% endblock %}</title>
+    </head>
+<body>
+{% block content %}
+
+<!-- Header content -->
+    <div class="header">
+        <h1>Data Visualization</h1>
+        <h5>Atention to detail will make the difference of a product's quality</h5>
+    </div>
+
+<!--Content-->
+
+    <h2 class="section-heading">My Brewing experience</h2>
+
+        <div class="column-1" style="height:1200px;">
+
+            <h1 class="inside-heading">Why brewing is so fun!</h1>
+
+            <div class="grid-content">
+
+                <div class="img-grid">
+                   {% autoescape off %}
+                   {{ line_graph_div }}
+                   {% endautoescape %}
+                </div>
+                <p style="padding-left:250px;">Plato degree is the amount of sugars per liter amount that later
+                   will be fermented into alcohol. During production the 
+                   amount of water in the mix varies and so does the sugar content
+                   and acidity
+                </p>
+                <div class="img-grid"> 
+                    {% autoescape off %}
+                    {{ ph_scale_div }}
+                    {% endautoescape %}
+                </div>
+                <p style="padding-left:250px;">The pH levels during various stages of the brewing process
+                    affect extract potential, beer color, hot-break formation,
+                    foam stability, hop oil extraction, hop bitterness and 
+                    lauterability of the beer.
+                    It is also an important consideration for beer quality 
+                    during storage as a low pH inhibits bacterial growth.
+                </p>
+            </div>
+        </div>
+
+    <!--Section two: global -->
+
+    <h2 class="section-heading">Population & Global</h2>
+
+        <div class="column-1">
+
+            <h1 class="inside-heading">A house with more hallway than room area</h1>
+
+            <div class="grid-content">
+
+                <div class="img-grid">
+                   {% autoescape off %}
+                   {{ map_div }}
+                   {% endautoescape %}
+                </div>
+                <p style="padding-left:250px;">
+                What are the most densely populated countries in the world? 
+                Perhaps surprisingly, the most populous countries in the world, 
+                China and India, are far from the most densely populated.
+                </p>
+                <div class="img-grid"> 
+                    {% autoescape off %}
+                    {{ population_div }}
+                    {% endautoescape %}
+                </div>
+                <p style="padding-left:250px;">
+For example, the most densely populated country in the world in 2020 was the diminutive European city-state of Monaco. Located near the French Riviera on the northern edge of the Mediterranean Sea, Monaco has a population of fewer than 40,000 people compared to China's 1.4 billion—but squeezes them into a mere two km² of land area (compared to China's 9.7 million km²).
+                </p>
+            </div>
+        </div>
+        
+    <h2 class="section-heading"> </h2>
+
+    <!-- footer -->
+    <div class="footer">
+        <p class="footer-text-left">
+            <a href="{{ "/" }}" class="menu" >CV</a>
+            <a href="{{ "guis.html" }}" class="menu">Programs</a>
+        </p>
+
+        <div class="footer-content-right">
+            <a href="https://github.com/westoleaboat" target="_blank">
+            {% load static %}
+            <img src="{% static 'githublogo.png' %}" alt="github logo"></img></a>
+        </div>
+    </div>
+
+{% endblock %}
+</body>
+</html>
+
+
+
+
+
+
