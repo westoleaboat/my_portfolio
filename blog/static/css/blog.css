@@ -170,7 +170,7 @@ a {
 
 /* Large profile image */
 .large-profile {
-    background: url('cv-big-photo2.png');
+    background: url('static/cv-big-photo2.png');
     /*background-size: cover;*/
     background-position: center;
     width:450;
