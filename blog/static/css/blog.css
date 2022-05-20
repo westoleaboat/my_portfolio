@@ -90,6 +90,17 @@ a {
     font:500 100%/1.5 system-ui;
 }
 
+/*.grid-content-extra {
+    display:grid;
+    padding:2rem;
+    grid-template-columns:400px 1fr;
+    gap: 1rem;
+    align-items:center;
+    max-width:1200px;
+    margin:0 auto;
+    font:500 100%/1.5 system-ui;
+}*/
+
 .img-grid {
     width:600px;
     /*padding-right:200px;*/
@@ -188,18 +199,24 @@ a {
 }
 
 .inside-heading {
-    margin-left: 300px;
+    margin-left: 380px;
 }
 
 /* Sizing for project containers */
 
 .column-4 {
-    float: left;
-    width:30%;
+    /*float: left;*/
+    /*width:30%;*/
+    width:100%;
     padding: 10px;
     margin: 20px;
     height: 250px;
     margin-left:30px;
+    align-items:center;
+}
+
+.text-description {
+    font-size:20px;
 }
 
 /* color and images for project containers */
@@ -342,8 +359,8 @@ a {
     margin: auto;
     margin-bottom: 50px;
     margin-top: 75px;
-    margin-left:30px;
-    background-color: white;
+    margin-left: 332.5;
+    background-color: #209BFF;
 }
 
 /* table formatting */

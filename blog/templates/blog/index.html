@@ -22,18 +22,18 @@
     <div class="header">
         <img src="static/linkdin_tmbh.jpg" class="profile-small" alt="Header image">
         <h1>Hi, my name is Tomas Chacon</h1>
-        <h5>A hobbist programmer interested in data analysis, circular economy, eco-friendly energy
+        <h4>A hobbist programmer interested in data analysis, circular economy, eco-friendly energy
 sources and efficiency on a macro scale.</h5>
     </div>
 
     <div class="column-2">
         <h1>About me</h1>
-        <p>I am an Environmental Engineer who does programming as a hobby, I started doing data analysis
+        <p style="font-size:22px;">I am an Environmental Engineer who does programming as a hobby, I started doing data analysis
          for my bachelor thesis on microbiology and yeast fermentation, and later developed to
         other branches as a way to improve my engineering skills. On my free time I deal with Linux Distros, 3D printing, technology research 
-        and try to run my own servers </p>
+        and try to run my own servers. </p>
 
-        <table class="table-style-soft">
+        <!--table class="table-style-soft">
             <tr>
 
                 <td>Group work</td>
@@ -47,7 +47,7 @@ sources and efficiency on a macro scale.</h5>
                 <td>Problem-solving</td>
                 <td>🌑 🌑 🌑</td>
             </tr>
-        </table>
+        </table-->
 
 
 
@@ -60,10 +60,79 @@ sources and efficiency on a macro scale.</h5>
     </div>
 
     <!-- Section 3 - Projects  -->
-    <h2 class="section-heading">Projects</h2>
+    <h1 class="section-heading">Projects</h1>
+
+    <h1 class="inside-heading">Automatic work report PDF</h1>
+
+    <div class="grid-content">
 
 
-    <a href="{{ "blog/graphs.html" }}" class="menu" target="_blank">
+        <div class="img-grid" style="width:400px; height:auto;">
+            {% load static %}
+            <img src="{% static 'pdf_report.png' %}" alt="pdf report image"></img>
+        </div>
+        <p class="text-description" style="padding-left:250px;">
+        Time saving is a valuable perk in most work places.
+        This program came out as a response for the paperwork
+        created during production requiring analysis and 
+        sensible data categorization. This executable allows you to
+        create a time-stamp and log your process information 
+        automatically, then auto-generate a PDF report with raw data.
+        Save hours of paperwork with a single click.
+        <br>
+        <br>
+        <br>
+        <br>
+        <a target="_blank" rel="noopener noreferrer" class="btn-white linkedin" href="https://github.com/westoleaboat/automatic-report-pdf/blob/main/brewlog.py">Source code</a>
+        </p>
+
+    </div>
+
+    <h1 class="inside-heading">Text-to-Binary translator</h1>
+
+    <div class="grid-content">
+    <div class="img-grid" style="width:400px; height:auto;">
+            {% load static %}
+            <img src="{% static 'bnr-trans-img.png' %}" alt="binary translator image"></img>
+        </div>
+        <p style="padding-left:250px;">
+        As an approach to algorithms in cybersecurity as eliptical curves 
+        and encryption, this project is a first step into more complex forms
+        of data-hashing. Dictionaries and translators are a good way
+        to deal with basic data manipulation in Python.
+        <br>
+        <br>
+        <br>
+        <br>
+        <a target="_blank" rel="noopener noreferrer" class="btn-white linkedin" href="https://github.com/westoleaboat/binary-translator-gui/blob/main/translator.py">Source code</a>
+        </p>
+    </div>
+
+    <h1 class="inside-heading">Timer & Lap count</h1>
+
+    <div class="grid-content">
+    <div class="img-grid" style="width:400px; height:auto;">
+            {% load static %}
+            <img src="{% static 'timer-img.png' %}" alt="timer image"></img>
+        </div>
+        <p style="padding-left:250px;">
+        The abilty to control time is a power many would like to have.
+        This project came as one of my earliest executables in Tkinter.
+        A timer was chosen because is a good way of understanding loops
+        and IF statements. 
+        <br>
+        <br>
+        <br>
+        <br>
+        <a target="_blank" rel="noopener noreferrer" class="btn-white linkedin" href="http://github.com/westoleaboat/python_timer/blob/main/timer.py">Source code</a>
+
+        </p>
+    </div>
+
+    <!--/div-->
+
+
+    <!--a href="{{ "blog/graphs.html" }}" class="menu" target="_blank">
     <div class="column-4 project-1">
         <h2 class="project-text">Data <br>Visualization</h2>
         </div></a>
@@ -71,15 +140,16 @@ sources and efficiency on a macro scale.</h5>
     <a href="{{ "blog/guis.html" }}" class="menu" target="_blank">
     <div class="column-4 project-2">
         <h2 class="project-text">Guided User<br>Interfaces</h2>
-    </div></a>
+    </div></a-->
 
-    <div class="column-4 project-3" style="position:relative;">
+
+    <!--div class="column-4 project-3" style="position:relative;"-->
+    <div class="column-1 project-3" style="position:relative;width:65%">
         <h2 class="project-text">More</h2>
             <div class="overlay">
                 <div class="project-3-text">
                     <h2>I do...</h2>
                         <ul>
-<!--a href="https://github.com/westoleaboat/embassy-buildguide-ESP" target="_blank">technical documentation</a-->
                             <li>translate <a href="https://github.com/westoleaboat/embassy-buildguide-ESP" target="_blank">technical documentation</a> for self hosting</li>
                             <li>FUD <a href="https://github.com/westoleaboat/Bitcoin" target="_blank">research</a> about Bitcoin technology</li>
                             <li>3D modeling and printing</li>
@@ -92,8 +162,10 @@ sources and efficiency on a macro scale.</h5>
     </div>
 
     <!-- Section 4 Experience -->
-    <div class="section-break"> </div>
-    <h2 class="section-heading">Experience</h2>
+    <!--div class="section-break"> </div-->
+
+
+    <!--h2 class="section-heading">Experience</h2>
     
     <div class="column-1">
         <h2>Employment  <a target="_blank" rel="noopener noreferrer" class="btn-white linkedin" href="https://www.linkedin.com/in/tomas-chacon-76560993/">Linkedin</a></h2>
@@ -112,13 +184,13 @@ sources and efficiency on a macro scale.</h5>
                 <td>General Cleaning</td>
                 <td>Trivsel, siivousfirma</td>
                 <td>Jul 2018 - Jun 2019</td>
-            </tr>
+            </tr-->
             <!--tr>
                 <td>Inter</td>
                 <td>Nordic Brew Craft, panimo</td>
                 <td>Sep 2017 - Feb 2018</td>
             </tr-->
-            <tr>
+            <!--tr>
                 <td>Rakennussiivooja</td>
                 <td>Aalto Henkilostopalvelut, Aaltovoima Oy</td>
                 <td>Jun 2017 - Jul 2018</td>
@@ -127,20 +199,20 @@ sources and efficiency on a macro scale.</h5>
                 <td>Logistics and maintenance manager</td>
                 <td>Servicios y maquinaria CHM</td>
                 <td>Sep 2015 - Aug 2016</td>
-            </tr>
+            </tr-->
             <!--tr>
                 <td>
                     <a target="_blank" rel="noopener noreferrer" class="btn-white linkedin" href="https://www.linkedin.com/in/tomas-chacon-76560993/">Linkedin</a>
                 </td>
 
-            </tr-->
-        </table>
-    </div>
-    </div>
+            </tr>
+        </table-->
+    <!--/div>
+    </div-->
 
     <!-- Section 5: education and skill -->
 
-    <div class="column-2a" style="background-color: white;">
+    <!--div class="column-2a" style="background-color: white;">
         <h2>Education</h2>
         <table class="table-style">
             <tr>
@@ -154,12 +226,12 @@ sources and efficiency on a macro scale.</h5>
             <tr>
                 <td>Universidad Tecnica Federico Santa Maria,<br>Architecture</td>
                 <td>2014 - 2015</td>
-            </tr>
+            </tr-->
             <!--tr>
                 <td>San Marcos Highscool</td>
                 <td>2009 - 2013</td>
             </tr-->
-        </table>
+        <!--/table>
     </div>
 
 
@@ -191,10 +263,11 @@ sources and efficiency on a macro scale.</h5>
           <td>🌑 🌑</td>
         </tr>
       </table>
-    </div>
+    </div-->
 
     <!--Section 6 contact me -->
-    <div class="section-break"> </div>
+    <!--div class="section-break"> </div-->
+
     <div class="column-quote" style="
         width:auto; 
         height:475px;
@@ -235,8 +308,11 @@ sources and efficiency on a macro scale.</h5>
 
 
         {% load static %}
-        <a href="{{ "blog/graphs.html" }}" class="menu" style=":hover {background-color:yellow}" target="_blank">Graphs</a>
-        <a href="{{ "blog/guis.html" }}" class="menu" target="_blank">Programs</a></p>
+        <!--a href="{{ "blog/graphs.html" }}" class="menu" style=":hover {background-color:yellow}" target="_blank">Graphs</a>
+        <a href="{{ "blog/guis.html" }}" class="menu" target="_blank">Programs</a></p-->
+
+        <!--a target="_blank" rel="noopener noreferrer" class="btn-white linkedin" href="https://www.linkedin.com/in/tomas-chacon-76560993/"-->
+        <a target="_blank" rel="noopener noreferrer" class="btn-white linkedin" href="https://www.linkedin.com/in/tomas-chacon-76560993/">Linkedin</a>
 
         <div class="footer-content-right" style="
             padding-right:40px;
