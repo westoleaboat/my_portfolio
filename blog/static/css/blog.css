@@ -199,7 +199,8 @@ a {
 }
 
 .inside-heading {
-    margin-left: 380px;
+    /*margin-left: 380px;*/
+    text-align: center;
 }
 
 /* Sizing for project containers */
@@ -334,12 +335,14 @@ a {
 
 /* table formatting */
 .table-style {
-    width:100%;
-    border-spacing:24px;
+    width:25%;
+    border-spacing:25px;
+    margin-left:35%;
+    font-size:30px;
 }
 
 .table-style-soft {
-    width:100%;
+    width:27%;
     border-spacing:24px;
 }
 
@@ -364,7 +367,7 @@ a {
 }
 
 /* table formatting */
-.table-style {
+/*.table-style {
     width:100%;
     border-spacing:24px;
 }
@@ -372,7 +375,7 @@ a {
 .table-style-soft {
     width:100%;
     border-spacing:24px;
-}
+}*/
 
 /* fifth section education & skill */
 

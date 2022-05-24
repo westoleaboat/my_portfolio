@@ -30,7 +30,7 @@ sources and efficiency on a macro scale.</h5>
         <h1>About me</h1>
         <p style="font-size:22px;">I am an Environmental Engineer who does programming as a hobby, I started doing data analysis
          for my bachelor thesis on microbiology and yeast fermentation, and later developed to
-        other branches as a way to improve my engineering skills. On my free time I deal with Linux Distros, 3D printing, technology research 
+        other branches as a way to improve my engineering skills. On my free time I deal with Linux Distros, technology research 
         and try to run my own servers. </p>
 
         <!--table class="table-style-soft">
@@ -55,7 +55,7 @@ sources and efficiency on a macro scale.</h5>
     <div class="column-2 large-profile">
         <!--img style="background-size: cover; background-position: center;"--> 
         {% load static %}
-        <img src="{% static 'cv-big-photo2.png' %}" alt="large-profile" height="475px"></img>
+        <img src="{% static 'cv-big-photo2.png' %}" alt="large-profile" height="475px" style="padding-left:150px;"></img>
 
     </div>
 
@@ -71,6 +71,8 @@ sources and efficiency on a macro scale.</h5>
             {% load static %}
             <img src="{% static 'pdf_report.png' %}" alt="pdf report image"></img>
         </div>
+
+
         <p class="text-description" style="padding-left:250px;">
         Time saving is a valuable perk in most work places.
         This program came out as a response for the paperwork
@@ -113,7 +115,7 @@ sources and efficiency on a macro scale.</h5>
     <div class="grid-content">
     <div class="img-grid" style="width:400px; height:auto;">
             {% load static %}
-            <img src="{% static 'timer-img.png' %}" alt="timer image"></img>
+            <img src="{% static 'timer-img.png' %}" alt="timer image" style="padding-left:150px"></img>
         </div>
         <p class="text-description" style="padding-left:250px;">
         The abilty to control time is a power many would like to have.
@@ -268,7 +270,7 @@ sources and efficiency on a macro scale.</h5>
     <!--Section 6 contact me -->
     <!--div class="section-break"> </div-->
 
-    <div class="column-quote" style="
+    <!--div class="column-quote" style="
         width:auto; 
         height:475px;
         padding:40px;
@@ -279,17 +281,19 @@ sources and efficiency on a macro scale.</h5>
         margin-top:50px;
         margin-left:40px;
         margin-right:70px;
-        border: 20px solid #FEDE00;
-        ">
+        "-->
+        <!--border: 20px solid #FEDE00;
+        "-->
 
 
-        <p class="quote" >Contact me at:</p>
-        <p class="quote" style="background-color: white; font-size:40px;">Kokkola, FIN. +358452200289<br>tomaschacon732@hotmail.com</p>
+        <!--p class="quote" >Contact me at:</p-->
+        <!--p class="quote" style="font-size:40px;">Kokkola, FIN. +358452200289<br>tomaschacon732@hotmail.com</p-->
         <!--p style="font-size:10px;">Please contact me at:<br>+358452200289<br>tomaschacon732@hotmail.com</p-->
-    </div>
+    <!--/div-->
 
     <!-- section 7 footer -->
-    <div class="footer" style="
+
+    <!--div class="footer" style="
         position:fixed;
         bottom:0;
         left:0;
@@ -297,14 +301,14 @@ sources and efficiency on a macro scale.</h5>
         height:70px;
         background-color:#D0DAEE;
         margin-top:100px;
-        ">
+        "-->
     <!--footer--> <!--class="footer"-->
-        <p class="footer-text-left" style="
+        <!--p class="footer-text-left" style="
         font-size:25px;
         padding=left:40px;
         float:left;
         word-spacing:20px;
-        ">
+        "-->
 
 
         {% load static %}
@@ -312,9 +316,9 @@ sources and efficiency on a macro scale.</h5>
         <a href="{{ "blog/guis.html" }}" class="menu" target="_blank">Programs</a></p-->
 
         <!--a target="_blank" rel="noopener noreferrer" class="btn-white linkedin" href="https://www.linkedin.com/in/tomas-chacon-76560993/"-->
-        <a target="_blank" rel="noopener noreferrer" class="btn-white linkedin" href="https://www.linkedin.com/in/tomas-chacon-76560993/">Linkedin</a>
+        <!--a target="_blank" rel="noopener noreferrer" class="btn-white linkedin" href="https://www.linkedin.com/in/tomas-chacon-76560993/">Linkedin</a-->
 
-        <div class="footer-content-right" style="
+        <!--div class="footer-content-right" style="
             padding-right:40px;
             margin-top:20px;
             float:right;
@@ -324,12 +328,67 @@ sources and efficiency on a macro scale.</h5>
             height:40px;
             margin-left:20px;
             margin-top:5px;
-            "></img></a> <!-- class="icon-style" -->
+            "></img></a--> <!-- class="icon-style" -->
 <!--class="icon-style"-->
-        </div>
-    </div>
+        <!--/div>
+    </div-->
 
     <!--/footer-->
+
+
+        <table class="table-style">
+            <tr>
+                <td>LinkedIn</td>
+                <td>
+<a href="https://www.linkedin.com/in/tomas-chacon-76560993/" target="_blank"><img src="static/linkedin-logo1white.png" alt="github logo" style="
+            height:40px;
+            margin-left:20px;
+            margin-top:5px;
+            "></img></a>
+                </td>
+
+            </tr>
+            <tr>
+                <td>Github</td>
+                <td>
+<a href="https://github.com/westoleaboat" target="_blank">
+            <img src="static/githublogo.png" alt="github logo" style="
+            height:40px;
+            margin-left:20px;
+            margin-top:5px;
+            "></img></a>
+                </td>
+                <!--td>Feb 2018 - Sep 2019</td-->
+            </tr>
+
+            <tr>
+                <td>+358 452200289</td>
+                <td>
+            <a>
+            <img src="static/phone-logo1white.png" alt="phone logo" style="
+            height:40px;
+            margin-left:20px;
+            margin-top:5px;
+            "></img></a>
+                </td>
+                <!--td>Feb 2018 - Sep 2019</td-->
+            </tr>
+            <tr>
+                <td>tomaschacon732@hotmail.com</td>
+                <td>
+            <a>
+            <img src="static/email-logo1white.png" alt="phone logo" style="
+            height:30px;
+            margin-left:20px;
+            margin-top:5px;
+            "></img></a>
+                </td>
+                <!--td>Feb 2018 - Sep 2019</td-->
+            </tr>
+
+        </table>
+
+
             
     {% endblock %}
 </body>
