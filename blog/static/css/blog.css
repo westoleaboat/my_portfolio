@@ -346,6 +346,13 @@ a {
     border-spacing:24px;
 }
 
+.table-footer {
+    width:25%;
+    border-spacing:25px;
+    margin-left:35%;
+    font-size:30px;
+}
+
 /* fifth section education & skill */
 
 
@@ -362,7 +369,8 @@ a {
     margin: auto;
     margin-bottom: 50px;
     margin-top: 75px;
-    margin-left: 332.5;
+    /*margin-left: 332.5;*/
+    margin-left: 50;
     background-color: #209BFF;
 }
 
