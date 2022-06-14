@@ -4,429 +4,155 @@
 <head>
   <meta charset="utf-8">
   <title>{% block title %}Portfolio{% endblock %}</title>
-<style>
-    a.menu:hover {
-    background-color:yellow;
-    font-size:20px;
-    }
-</style>
-
 </head>
 
-
-
 <body>
+    <!--div class="container"-->
     {% block content %}
-
-    <!--Header content-->
-    <div class="header">
-        <img src="static/linkdin_tmbh.jpg" class="profile-small" alt="Header image">
-        <h1>Hi, my name is Tomas Chacon</h1>
-        <h4>A self-taught programmer interested in data analysis, circular economy, eco-friendly energy
-sources and efficiency on a macro scale.</h5>
-    </div>
-
-    <div class="column-2">
-        <h1>About me</h1>
-        <p style="font-size:22px;">I am an Environmental Engineer who started programming as a hobby, I started doing data analysis
-         for my bachelor thesis on microbiology and yeast fermentation, and later developed to
-        other branches as a way to improve my engineering skills. On my free time I deal with Linux Distros, technology research 
-        and try to run my own servers. </p>
-
-        <!--table class="table-style-soft">
-            <tr>
-
-                <td>Group work</td>
-                <td>🌑 🌑 🌑 🌑</td>
-            </tr>
-            <tr>
-                <td>Flexibility</td>
-                <td>🌑 🌑 🌑</td>
-            </tr>
-            <tr>
-                <td>Problem-solving</td>
-                <td>🌑 🌑 🌑</td>
-            </tr>
-        </table-->
-
-
-
-    </div>
-    <div class="column-2 large-profile">
-        <!--img style="background-size: cover; background-position: center;"--> 
-        {% load static %}
-        <img src="{% static 'cv-big-photo2.png' %}" alt="large-profile" height="475px" style="padding-left:150px;"></img>
-
-    </div>
+    <div class="container">
+        <div class="header">
+            <div><h1>Hi!, my name is Tomas Chacon</h1></div>
+            <h4>A self-taught programmer interested in data analysis, circular economy, eco-friendly energy sources and efficiency on a macro scale.</h4>
+            <div class="column-2">
+                <h1>About me</h1>
+                <p>
+                I am an Environmental Engineer who started programming as a hobby, I started doing data analysis for my bachelor thesis on microbiology and yeast fermentation, and later developed to other branches as a way to improve my engineering skills. On my free time I deal with Linux Distros, technolog research and try to run my own servers. 
+                </p>
+            </div>
+            <div class="column-2">
+            <img src="static/cv-big-photo2.png" alt="large-profile"></img>
+            </div>
+        </div>
 
     <!-- Section 3 - Projects  -->
-    <h1 class="section-heading">Projects</h1>
 
-    <h1 class="inside-heading">Automatic work report PDF</h1>
-
-    <div class="grid-content">
-
-
-        <div class="img-grid" style="width:400px; height:auto;">
-            {% load static %}
-            <img src="{% static 'pdf_report.png' %}" alt="pdf report image"></img>
-        </div>
-
-
-        <p class="text-description" style="padding-left:250px;">
-        Time saving is a valuable perk in most work places.
-        This program came out as a response for the paperwork
-        created during production requiring analysis and 
-        sensible data categorization. This executable allows you to
-        create a time-stamp and log your process information 
-        automatically, then auto-generate a PDF report with raw data.
-        Save hours of paperwork with a single click.
-        <br>
-        <br>
-        <br>
-        <br>
-        <a target="_blank" rel="noopener noreferrer" class="btn-white linkedin" href="https://github.com/westoleaboat/automatic-report-pdf/blob/main/brewlog.py">Source code</a>
-        </p>
-
-    </div>
-
-    <h1 class="inside-heading">Text-to-Binary translator</h1>
-
-    <div class="grid-content">
-    <div class="img-grid" style="width:400px; height:auto;">
-            {% load static %}
-            <img src="{% static 'bnr-trans-img.png' %}" alt="binary translator image"></img>
-        </div>
-        <p class="text-description" style="padding-left:250px;">
-        As an approach to algorithms in cybersecurity as eliptical curves 
-        and encryption, this project is a first step into more complex forms
-        of data-hashing. Dictionaries and translators are a good way
-        to deal with simple data manipulation in Python.
-        <br>
-        <br>
-        <br>
-        <br>
-        <a target="_blank" rel="noopener noreferrer" class="btn-white linkedin" href="https://github.com/westoleaboat/binary-translator-gui/blob/main/translator.py">Source code</a>
-        </p>
-    </div>
-
-    <h1 class="inside-heading">Timer & Lap count</h1>
-
-    <div class="grid-content">
-    <div class="img-grid" style="width:400px; height:auto;">
-            {% load static %}
-            <img src="{% static 'timer-img.png' %}" alt="timer image" style="padding-left:150px"></img>
-        </div>
-        <p class="text-description" style="padding-left:250px;">
-        The abilty to control time is a power many would like to have.
-        This project came as one of my earliest executables in Tkinter.
-        A timer was chosen to improve my understanding of loops
-        and IF statements. 
-        <br>
-        <br>
-        <br>
-        <br>
-        <a target="_blank" rel="noopener noreferrer" class="btn-white linkedin" href="http://github.com/westoleaboat/python_timer/blob/main/timer.py">Source code</a>
-
-        </p>
-    </div>
-
+        <div id="content1">
+            <div class="section-heading">
+                <h1>Projects</h1>
+            </div>
+            <div class="inside-heading">
+                <h1>Automatic work report PDF</h1>
+            </div>
+            <div class="grid-content">
+                <div class="img-grid"> <!--style="width:400px; height:auto;"-->
+                {% load static %}
+                <img src="{% static 'pdf_report.png' %}" alt="pdf report image"></img>
+                </div>
+            </div>
+            <!--div class="text-description"--><!-- style="padding-left:250px;"-->
+            <p class="text-description">
+            Time saving is a valuable perk in most work places.
+            This program came out as a response for the paperwork
+            created during production requiring analysis and 
+            sensible data categorization. This executable allows you to
+            create a time-stamp and log your process information 
+            automatically, then auto-generate a PDF report with raw data.
+            Save hours of paperwork with a single click.
+            <br>
+            <br>
+            <br>
+            <br>
+            <a target="_blank" rel="noopener noreferrer" class="btn-white linkedin" href="https://github.com/westoleaboat/automatic-report-pdf/blob/main/brewlog.py">Source code</a>
+            </p>
+            </div>
+    <!--/div-->
     <!--/div-->
 
 
-    <!--a href="{{ "blog/graphs.html" }}" class="menu" target="_blank">
-    <div class="column-4 project-1">
-        <h2 class="project-text">Data <br>Visualization</h2>
-        </div></a>
+        <div id="content2">
+        <!--h1 class="section-heading">Projects</h1-->
+            <h1 class="inside-heading">Text-to-binary translator</h1>
+            <div class="grid-content">
+                <div class="img-grid"> <!--style="width:400px; height:auto;"-->
+                {% load static %}
+                <img src="{% static 'bnr-trans-img.png' %}" alt="pdf report image"></img>
+                </div>
+            </div>
+            <p class="text-description"><!-- style="padding-left:250px;"-->
+            As an approach to algorithms in cybersecurity as eliptical curves 
+            and encryption, this project is a first step into more complex forms
+            of data-hashing. Dictionaries and translators were the learning objective to deal with text-data manipulation in Python.
+            <br>
+            <br>
+            <br>
+            <br>
+            <a target="_blank" rel="noopener noreferrer" class="btn-white linkedin" href="https://github.com/westoleaboat/automatic-report-pdf/blob/main/brewlog.py">Source code</a>
+            </p>
+        </div>
 
-    <a href="{{ "blog/guis.html" }}" class="menu" target="_blank">
-    <div class="column-4 project-2">
-        <h2 class="project-text">Guided User<br>Interfaces</h2>
-    </div></a-->
+        <div id="content3">
+        <!--h1 class="section-heading">Projects</h1-->
+            <h1 class="inside-heading">Stopwatch & Lap counter</h1>
+            <div class="grid-content">
+                <div class="img-grid"> <!--style="width:400px; height:auto;"-->
+                {% load static %}
+                <img src="{% static 'timer-img.png' %}" alt="pdf report image"></img>
+                </div>
+            </div>
+            <p class="text-description"><!-- style="padding-left:250px;"-->
+            The abilty to control time is a power many would like to have.
+            This project came as one of my earliest executables in Tkinter.
+            A timer was chosen to improve my understanding of loops
+            and IF statements. 
+            <br>
+            <br>
+            <br>
+            <br>
+            <a target="_blank" rel="noopener noreferrer" class="btn-white linkedin" href="https://github.com/westoleaboat/automatic-report-pdf/blob/main/brewlog.py">Source code</a>
+            </p>
+        </div>
 
-
-    <!--div class="column-4 project-3" style="position:relative;"-->
-    <div class="column-1 project-3" style="position:relative;width:55%">
-        <!--h2 class="project-text">More</h2-->
-        <h2 style="padding-right:55px;" class="project-text">More</h2>
-            <div class="overlay">
-                <div class="project-3-text">
-                    <h2>I do...</h2>
+        <div class="column-1 project-3">
+            <h2 class="project-text">More</h2>
+                <div class="overlay">
+                    <div class="project-3-text">
+                        <h2>I do...</h2>
                         <ul>
-                            <li>translate <a href="https://github.com/westoleaboat/embassy-buildguide-ESP" target="_blank">technical documentation</a> for self hosting</li>
+                            <li>Translate <a href="https://github.com/westoleaboat/embassy-buildguide-ESP" target="_blank">technical documentation</a> for self-hosting</li>
                             <li>FUD <a href="https://github.com/westoleaboat/Bitcoin" target="_blank">research</a> about Bitcoin technology</li>
                             <li>3D modeling and printing</li>
                         </ul>
-                        <h3>+ This website is made with the <a href="https://github.com/westoleaboat/my_portfolio" target="_blank">Python Django framework</a></h3>
-
+                        <h3>+ This website is made with the <a href="Https://github.com/westoleaboat/my_portfolio" target="_blank">Python Django framework</a></h3>
+                    </div>
                 </div>
-            </div>
+        </div>
 
-    </div>
-
-    <!-- Section 4 Experience -->
-    <!--div class="section-break"> </div-->
-
-
-    <!--h2 class="section-heading">Experience</h2>
-    
-    <div class="column-1">
-        <h2>Employment  <a target="_blank" rel="noopener noreferrer" class="btn-white linkedin" href="https://www.linkedin.com/in/tomas-chacon-76560993/">Linkedin</a></h2>
-        <table class="table-style">
-            <tr>
-                <td>Production Manager</td>
-                <td>Kahakka panimo</td>
-                <td>Sep 2019 - Feb 2022</td>
-            </tr>
-            <tr>
-                <td>Production Assistant</td>
-                <td>Kahakka panimo</td>
-                <td>Feb 2018 - Sep 2019</td>
-            </tr>
-            <tr>
-                <td>General Cleaning</td>
-                <td>Trivsel, siivousfirma</td>
-                <td>Jul 2018 - Jun 2019</td>
-            </tr-->
-            <!--tr>
-                <td>Inter</td>
-                <td>Nordic Brew Craft, panimo</td>
-                <td>Sep 2017 - Feb 2018</td>
-            </tr-->
-            <!--tr>
-                <td>Rakennussiivooja</td>
-                <td>Aalto Henkilostopalvelut, Aaltovoima Oy</td>
-                <td>Jun 2017 - Jul 2018</td>
-            </tr>
-            <tr>
-                <td>Logistics and maintenance manager</td>
-                <td>Servicios y maquinaria CHM</td>
-                <td>Sep 2015 - Aug 2016</td>
-            </tr-->
-            <!--tr>
-                <td>
-                    <a target="_blank" rel="noopener noreferrer" class="btn-white linkedin" href="https://www.linkedin.com/in/tomas-chacon-76560993/">Linkedin</a>
-                </td>
-
-            </tr>
-        </table-->
-    <!--/div>
-    </div-->
-
-    <!-- Section 5: education and skill -->
-
-    <!--div class="column-2a" style="background-color: white;">
-        <h2>Education</h2>
-        <table class="table-style">
-            <tr>
-                <td>Intern at Kahakka Panimo</td>
-                <td>2017 - 2018</td>
-            </tr>
-            <tr>
-                <td>Centria University of Applied Sciences,<br>Environmental Chemistry Engineering</td>
-                <td>2016 - 2020</td>
-            </tr>
-            <tr>
-                <td>Universidad Tecnica Federico Santa Maria,<br>Architecture</td>
-                <td>2014 - 2015</td>
-            </tr-->
-            <!--tr>
-                <td>San Marcos Highscool</td>
-                <td>2009 - 2013</td>
-            </tr-->
-        <!--/table>
-    </div>
-
-
-    <div class="column-2a" style="background-color: white;">
-       <h2>Skills</h2>
-      <table class="table-style">
-        <tr>
-          <td>Python</td>
-          <td>🌑 🌑 🌑 </td>
-        </tr>
-        <tr>
-          <td>cli</td>
-          <td>🌑 🌑 🌑 </td>
-        </tr>
-        <tr>
-          <td>Linux</td>
-          <td>🌑 🌑</td>
-        </tr>
-        <tr>
-          <td>Blender</td>
-          <td>🌑 🌑 🌑 </td>
-        </tr>
-        <tr>
-          <td> HTML</td>
-          <td>🌑 🌑 🌑 </td>
-        </tr>
-        <tr>
-          <td> CSS</td>
-          <td>🌑 🌑</td>
-        </tr>
-      </table>
-    </div-->
-
-    <!--Section 6 contact me -->
-    <!--div class="section-break"> </div-->
-
-    <!--div class="column-quote" style="
-        width:auto; 
-        height:475px;
-        padding:40px;
-        padding-left:70px;
-        padding-right:70px;
-        padding-bottom:100px;
-        margin-bottom:150px;
-        margin-top:50px;
-        margin-left:40px;
-        margin-right:70px;
-        "-->
-        <!--border: 20px solid #FEDE00;
-        "-->
-
-
-        <!--p class="quote" >Contact me at:</p-->
-        <!--p class="quote" style="font-size:40px;">Kokkola, FIN. +358452200289<br>tomaschacon732@hotmail.com</p-->
-        <!--p style="font-size:10px;">Please contact me at:<br>+358452200289<br>tomaschacon732@hotmail.com</p-->
-    <!--/div-->
-
-    <!-- section 7 footer -->
-
-    <!--div class="footer" style="
-        position:fixed;
-        bottom:0;
-        left:0;
-        width:100%;
-        height:70px;
-        background-color:#D0DAEE;
-        margin-top:100px;
-        "-->
-    <!--footer--> <!--class="footer"-->
-        <!--p class="footer-text-left" style="
-        font-size:25px;
-        padding=left:40px;
-        float:left;
-        word-spacing:20px;
-        "-->
-
-
-        {% load static %}
-        <!--a href="{{ "blog/graphs.html" }}" class="menu" style=":hover {background-color:yellow}" target="_blank">Graphs</a>
-        <a href="{{ "blog/guis.html" }}" class="menu" target="_blank">Programs</a></p-->
-
-        <!--a target="_blank" rel="noopener noreferrer" class="btn-white linkedin" href="https://www.linkedin.com/in/tomas-chacon-76560993/"-->
-        <!--a target="_blank" rel="noopener noreferrer" class="btn-white linkedin" href="https://www.linkedin.com/in/tomas-chacon-76560993/">Linkedin</a-->
-
-        <!--div class="footer-content-right" style="
-            padding-right:40px;
-            margin-top:20px;
-            float:right;
-            ">
-        <a href="https://github.com/westoleaboat" target="_blank">
-            <img src="static/githublogo.png" alt="github logo" style="
-            height:40px;
-            margin-left:20px;
-            margin-top:5px;
-            "></img></a--> <!-- class="icon-style" -->
-<!--class="icon-style"-->
-        <!--/div>
-    </div-->
-
-    <!--/footer-->
-
-
-        <table class="table-style">
-            <!--tr-->
-                <!--td>LinkedIn</td-->
-                <!--td>
-                <a href="https://github.com/westoleaboat" target="_blank">
-                <img src="static/githublogo.png" alt="github logo" style="
-                height:40px;
-                margin-left:20px;
-                margin-top:5px;
-                "></img></a>
-                </td>
-                <td>
-<a href="https://www.linkedin.com/in/tomas-chacon-76560993/" target="_blank"><img src="static/linkedin-logo1white.png" alt="github logo" style="
-            height:40px;
-            margin-left:20px;
-            margin-top:5px;
-            "></img></a>
-                </td-->
-
-            <!--/tr-->
-            <!--tr-->
-                <!--td>Github</td-->
-                <!--td>
-<a href="https://github.com/westoleaboat" target="_blank">
-            <img src="static/githublogo.png" alt="github logo" style="
-            height:40px;
-            margin-left:20px;
-            margin-top:5px;
-            "></img></a>
-                </td-->
-                <!--td>Feb 2018 - Sep 2019</td-->
-            <!--/tr-->
-
-            
+    <!--div id="footer"-->
+        <!--table class="table-style"-->
+        <table class="table-footer">
             <tr>
                 <td>tomaschacon732@hotmail.com</td>
                 <td>
-            <a>
-            <img src="static/email-logo1white.png" alt="phone logo" style="
-            height:30px;
-            margin-left:20px;
-            margin-top:5px;
-            "></img></a>
+                    <a><img src="static/email-logo1white.png" alt="email logo" style="height:40px"></img>
+                    </a>
                 </td>
-                <!--td>Feb 2018 - Sep 2019</td-->
             </tr>
             <tr>
                 <td>+358 452200289</td>
                 <td>
-            <a>
-            <img src="static/phone-logo1white.png" alt="phone logo" style="
-            height:40px;
-            margin-left:20px;
-            margin-top:5px;
-            "></img></a>
+                    <a><img src="static/phone-logo1white.png" alt="phone logo" style="height:40px"></img>
+                    </a>
                 </td>
-                <!--td>Feb 2018 - Sep 2019</td-->
             </tr>
 
-        </table>
-        <table class="table-footer">
             <tr>
-                <!--td>LinkedIn</td-->
                 <td>
-                <a href="https://github.com/westoleaboat" target="_blank">
-                <img src="static/GitHub-Mark-Light-32px.png" alt="github logo" style="
-                height:40px;
-                margin-left:20px;
-                margin-top:5px;
-                "></img></a>
+                    <a href="https://github.com/westoleaboat" target="_blank">
+                    <img src="static/GitHub-Mark-Light-32px.png" alt="github logo">
+                    </img>
+                    </a>
                 </td>
                 <td>
-                <a href="https://www.linkedin.com/in/tomas-chacon-76560993/" target="_blank">
-                <img src="static/linkedin-logo1white.png" alt="github logo" style="
-                height:40px;
-                margin-left:20px;
-                margin-top:5px;
-                "></img></a>
+                    <a href="https://www.linkedin.com/in/tomas-chacon-76560993/" target="_blank">
+                    <img src="static/linkedin-logo1white.png" alt="linkedin logo" style="height:40px">
+                    </img>
+                    </a>
                 </td>
-
             </tr>
-
-
-
         </table>
-
-
-            
-    {% endblock %}
+    </div>
+        {% endblock %}
+    <!--/div-->
 </body>
-
 </html>
 
