@@ -7,14 +7,14 @@ body {
     display:grid;
     /*height:100vh;*/
     grid-template-columns:1fr 1fr 1fr 1fr;
-    grid-template-rows:1fr 1fr 1fr 0.7fr 0.7fr 0.2fr 0.2fr;
+    grid-template-rows:1fr 1fr 1fr 0.7fr 0.7fr 0.2fr;
     grid-template-areas:
       "header header header header"
       "content1 content1 content1 content1"
       "content2 content2 content2 content2"
       "content3 content3 content3 content3"
       "more more more more"
-      "table2 table2 table2 table2";
+      "footer footer footer footer";
     grid-gap:0.2rem;
 }
 
@@ -73,7 +73,7 @@ grid-content{
 }
 
 .footer{
-    grid-area:footer;
+    /*grid-area:footer;*/
 }
 
 a {
@@ -179,8 +179,8 @@ img {
     /*margin:100px;*/
     padding:25px;
     margin:auto;
-    width:70%;
-    grid-area:table-2;
+    width:50%;
+    grid-area:footer;
     font-size:30px;
 }
 
