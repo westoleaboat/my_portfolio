@@ -49,6 +49,8 @@ body {
     width:40%;
     height:auto;
     float:right;
+    padding-right:140px;
+    font-size:20px;
 }
 
 grid-content{
@@ -179,7 +181,7 @@ img {
     /*margin:100px;*/
     padding:25px;
     margin:auto;
-    width:50%;
+    width:30%;
     grid-area:footer;
     font-size:30px;
 }
@@ -238,4 +240,10 @@ img {
 .icon-style:hover {
     background-color: yellow;
     padding:5px;
+}
+
+@media only screen and (max-width:550px){
+    .text-description{
+        padding-right:0px;
+    }
 }

@@ -12,15 +12,15 @@
     <div class="container">
         <div class="header">
             <div><h1>Hi!, my name is Tomas Chacon</h1></div>
-            <h4>A self-taught programmer interested in data analysis, circular economy, eco-friendly energy sources and efficiency on a macro scale.</h4>
+            <h3>A self-taught programmer interested in data analysis, circular economy, eco-friendly energy sources and efficiency on a macro scale.</h3>
             <div class="column-2">
                 <h1>About me</h1>
-                <p>
+                <p style="font-size:20px">
                 I am an Environmental Engineer who started programming as a hobby, I started doing data analysis for my bachelor thesis on microbiology and yeast fermentation, and later developed to other branches as a way to improve my engineering skills. On my free time I deal with Linux Distros, technolog research and try to run my own servers. 
                 </p>
             </div>
             <div class="column-2">
-            <img src="static/cv-big-photo2.png" alt="large-profile"></img>
+            <img src="static/cv-big-photo2.png" alt="large-profile" style="width:350px;"></img>
             </div>
         </div>
 
@@ -33,13 +33,15 @@
             <div class="inside-heading">
                 <h1>Automatic work report PDF</h1>
             </div>
-            <div class="grid-content">
+            <!--div class="grid-content"-->
+            <div class="column-2">
                 <div class="img-grid"> <!--style="width:400px; height:auto;"-->
                 {% load static %}
-                <img src="{% static 'pdf_report.png' %}" alt="pdf report image"></img>
+                <img src="{% static 'pdf_report.png' %}" alt="pdf report image" style="padding-left:250px;"></img>
                 </div>
             </div>
             <!--div class="text-description"--><!-- style="padding-left:250px;"-->
+            <div class="column=2">
             <p class="text-description">
             Time saving is a valuable perk in most work places.
             This program came out as a response for the paperwork
@@ -55,6 +57,7 @@
             <a target="_blank" rel="noopener noreferrer" class="btn-white linkedin" href="https://github.com/westoleaboat/automatic-report-pdf/blob/main/brewlog.py">Source code</a>
             </p>
             </div>
+        </div>
     <!--/div-->
     <!--/div-->
 
@@ -62,12 +65,14 @@
         <div id="content2">
         <!--h1 class="section-heading">Projects</h1-->
             <h1 class="inside-heading">Text-to-binary translator</h1>
-            <div class="grid-content">
+            <!--div class="grid-content"-->
+            <div class="column=2">
                 <div class="img-grid"> <!--style="width:400px; height:auto;"-->
                 {% load static %}
-                <img src="{% static 'bnr-trans-img.png' %}" alt="pdf report image"></img>
+                <img src="{% static 'bnr-trans-img.png' %}" alt="pdf report image" style="padding-left:250px;"></img>
                 </div>
             </div>
+            <div class="column=2">
             <p class="text-description"><!-- style="padding-left:250px;"-->
             As an approach to algorithms in cybersecurity as eliptical curves 
             and encryption, this project is a first step into more complex forms
@@ -78,17 +83,20 @@
             <br>
             <a target="_blank" rel="noopener noreferrer" class="btn-white linkedin" href="https://github.com/westoleaboat/automatic-report-pdf/blob/main/brewlog.py">Source code</a>
             </p>
+            </div>
         </div>
 
         <div id="content3">
         <!--h1 class="section-heading">Projects</h1-->
             <h1 class="inside-heading">Stopwatch & Lap counter</h1>
-            <div class="grid-content">
+            <!--div class="grid-content"-->
+            <div class="column=2">
                 <div class="img-grid"> <!--style="width:400px; height:auto;"-->
                 {% load static %}
-                <img src="{% static 'timer-img.png' %}" alt="pdf report image"></img>
+                <img src="{% static 'timer-img.png' %}" alt="pdf report image" style="padding-left:250px;"></img>
                 </div>
             </div>
+            <div class="column=2">
             <p class="text-description"><!-- style="padding-left:250px;"-->
             The abilty to control time is a power many would like to have.
             This project came as one of my earliest executables in Tkinter.
@@ -100,6 +108,7 @@
             <br>
             <a target="_blank" rel="noopener noreferrer" class="btn-white linkedin" href="https://github.com/westoleaboat/automatic-report-pdf/blob/main/brewlog.py">Source code</a>
             </p>
+        </div>
         </div>
 
         <div class="column-1 project-3">
