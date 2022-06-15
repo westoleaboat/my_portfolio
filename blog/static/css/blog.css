@@ -7,12 +7,13 @@ body {
     display:grid;
     /*height:100vh;*/
     grid-template-columns:1fr 1fr 1fr 1fr;
-    grid-template-rows:1fr 1fr 1fr 0.7fr 0.7fr 0.2fr;
+    grid-template-rows:1fr 1fr 1fr 0.7fr 0.7fr 0.7fr 0.2fr;
     grid-template-areas:
       "header header header header"
       "content1 content1 content1 content1"
       "content2 content2 content2 content2"
       "content3 content3 content3 content3"
+      "content4 content4 content4 content4"
       "more more more more"
       "footer footer footer footer";
     grid-gap:0.2rem;
@@ -50,7 +51,7 @@ body {
     height:auto;
     float:right;
     padding-right:140px;
-    font-size:20px;
+    font-size:25px;
 }
 
 grid-content{
@@ -72,6 +73,9 @@ grid-content{
 }
 #content3{
     grid-area:content3;
+}
+#content4{
+    grid-area:content4;
 }
 
 .footer{
@@ -113,6 +117,7 @@ img {
     cursor: pointer;
     margin-top: .8rem;
     font-family: "DM Sans",sans-serif;
+    font-size:15px;
 }
 
 .linkedin {
@@ -190,7 +195,7 @@ img {
 
 .column-1 {
     grid-area:more;
-    width: 85%;
+    width: 70%;
     height: auto;
     position:relative;
     /*padding-top: 10%;*/
