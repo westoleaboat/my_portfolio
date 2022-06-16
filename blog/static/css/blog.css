@@ -78,6 +78,9 @@ grid-content{
 #content4{
     grid-area:content4;
 }
+#content5{
+    grid-area:content4;
+}
 
 .footer{
     /*grid-area:footer;*/
