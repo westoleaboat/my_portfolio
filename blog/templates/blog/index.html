@@ -16,7 +16,7 @@
             <div class="column-2" style="margin-left:100px;">
                 <h1>About me</h1>
                 <p style="font-size:25px">
-                I am an Environmental Engineer who started programming as a hobby, I started doing data analysis for my bachelor thesis on microbiology and yeast fermentation, and later developed to other branches as a way to improve my engineering skills. On my free time I deal with Linux Distros, technolog research and try to run my own servers. 
+                I am an Environmental Engineer who started programming as a hobby, I started doing data analysis for my bachelor thesis on microbiology and yeast fermentation, and later developed to other branches as a way to improve my engineering skills. On my free time I deal with Linux Distros, technology research and try to run my own servers. 
                 </p>
             </div>
             <div class="column-2">
@@ -58,11 +58,43 @@
             </p>
             </div>
         </div>
-    <!--/div-->
-    <!--/div-->
-
 
         <div id="content2">
+            <div class="section-heading">
+                <!--h1>Projects</h1-->
+            </div>
+            <div class="inside-heading">
+                <h1>QRcode reader</h1>
+            </div>
+            <!--div class="grid-content"-->
+            <div class="column-2">
+                <div class="img-grid"> <!--style="width:400px; height:auto;"-->
+                {% load static %}
+                <img src="{% static 'qr-code-gen.png' %}" alt="pdf report image" style="padding-left:250px;"></img>
+                </div>
+            </div>
+            <!--div class="text-description"--><!-- style="padding-left:250px;"-->
+            <div class="column=2">
+            <p class="text-description">
+            Thanks to Python, you can generate a QR code in 4 lines of script, while doing a QR code reader happens to be a bit more tricky. This reader is personally one of the most interesting projects I have done, given the versatility of elements to combine between mouse click events, image manipulation and using open CV for image analysing.<br>
+            The script starts by maximizing a transparent window on which the x and y coordinates of the mouse clicks will be used as variables to generate an image, triggering the actual GUI of the QR code program, and the data contained will be displayed. An image-file.png will be created and you will need sudo privileges to run the file.  
+            <br>
+            <br>
+            <br>
+            <br>
+            <a target="_blank" rel="noopener noreferrer" class="btn-white linkedin" href="https://github.com/westoleaboat/qr-codeReader/blob/main/main.py">Source code</a>
+            </p>
+            </div>
+        </div>
+
+
+
+
+    <!--/div-->
+    <!--/div-->
+
+
+        <div id="content3">
         <!--h1 class="section-heading">Projects</h1-->
             <h1 class="inside-heading">Text-to-binary translator</h1>
             <!--div class="grid-content"-->
@@ -86,7 +118,7 @@
             </div>
         </div>
 
-        <div id="content3">
+        <div id="content4">
         <!--h1 class="section-heading">Projects</h1-->
             <h1 class="inside-heading">SQL database Manager</h1>
             <!--div class="grid-content"-->
@@ -108,7 +140,7 @@
             </div>
         </div>
 
-        <div id="content4">
+        <div id="content5">
         <!--h1 class="section-heading">Projects</h1-->
             <h1 class="inside-heading">Stopwatch & Lap counter</h1>
             <!--div class="grid-content"-->
