@@ -42,10 +42,9 @@
                         Time saving is a valuable perk in most work places.
                         This program came out as a response for the paperwork
                         created during production requiring analysis and
-                        sensible data categorization. This executable allows you to
-                        create a time-stamp and log your process information
-                        automatically, then auto-generate a PDF report with raw data.
-                        Save hours of paperwork with a single click.
+                        sensible data categorization. This executable runs a stopwatch allowing you to create a time-stamp and log your process information
+                        automatically, a PDF report containing raw data is created using the FPDF module, and can be accessed from anywhere online with the Filestack client module.
+                        Save hours of paperwork and automate your process documentation with a single click.
                         <br>
                         <br>
                         <br>
@@ -63,9 +62,8 @@
                     <img src="{% static 'qr-code-gen.png' %}" class="content-img" alt="qr code reader image"/>
                     <div class="content-info">
                         <p>
-                        Thanks to Python, you can generate a QR code in 4 lines of script, while doing a QR code reader happens to be a bit more tricky. This reader is personally one of the most interesting projects I have done, given the versatility of elements to combine between mouse click events, image manipulation and using open CV for image analysing.<br>
-                        The script starts by maximizing a transparent window on which the x and y coordinates of the mouse clicks will be used as variables to generate an image, triggering the actual GUI of the QR code program, and the data contained will be displayed. An image-file.png will be created and you will need sudo privileges to run the file.
-                        <br>
+                        Thanks to Python, you can generate a QR code in 4 lines of script, while doing a QR code reader happens to be a bit more tricky. This reader is personally one of the most interesting projects I have done, given the versatility of elements to combine between mouse click events, image manipulation and using computer vision for image analysing.<br>
+                        The script starts by maximizing a transparent window on which the x and y coordinates of the mouse clicks will be used as variables to generate an image with the PIL ImageGrab module, triggering the actual GUI and showing the created image to scan, openCV is used to detect if the image contains a QR code and the data will be displayed. An 'image-file.png' will be created and you may need sudo privileges to run the app, also you will need an existing QR code to scan before executing the script. Once you run the app click the top-left corner followed by clicking the bottom-right corner of the code you want to read.<br>
                         <br>
                         <br>
                         <br>
@@ -84,7 +82,7 @@
                         <p>
                         As an approach to algorithms in cybersecurity as eliptical curves
                         and encryption, this project is a first step into more complex forms
-                        of data-hashing. Dictionaries and translators were the learning objective to deal with text-data manipulation in Python.
+                        of data-hashing. Dictionaries and strings were the learning objective to deal with text-data manipulation in Python.
                         <br>
                         <br>
                         <br>
@@ -102,8 +100,7 @@
                     <img src="static/sqlite-db.png" class="content-img" alt="database GUI image"/>
                     <div class="content-info">
                         <p class="text-description">
-                        Databases are an excelent way of storing information, and should not be annoying to deal with. In this project a Sqlite database is created and managed through a simple GUI which displays real time data, you can Edit, Delete and Add information as you wish.
-                        <br>
+                        Databases are an excelent way of storing information, and should not be annoying to deal with. This project also came as a result of the paperwork created while managing a warehouse inventory. When launching the app for the first time a database with a profile table is created using the sqlite3 module. The app is managed through a GUI which displays real time data, you can Delete and Add new elements as you wish, while Editing a record will open a new window allowing you to modify the database record.                        <br>
                         <br>
                         <br>
                         <br>
@@ -123,7 +120,7 @@
                         The abilty to control time is a power many would like to have.
                         This project came as one of my earliest executables in Tkinter.
                         A timer was chosen to improve my understanding of loops
-                        and IF statements.
+                        and IF statements, collecting time events and updating the displayed text. This same stopwatch format is used among other apps created.
                         <br>
                         <br>
                         <br>
@@ -134,20 +131,7 @@
                 </div>
             </div>
 
-            <!-- <div class="column-1 project-3">
-                <h2 class="project-text">More</h2>
-                    <div class="overlay">
-                        <div class="project-3-text">
-                            <h2>I do...</h2>
-                            <ul>
-                                <li>Translate <a href="https://github.com/westoleaboat/embassy-buildguide-ESP" target="_blank">technical documentation</a> for self-hosting</li>
-                                <li>FUD <a href="https://github.com/westoleaboat/Bitcoin" target="_blank">research</a> about Bitcoin technology</li>
-                                <li>3D modeling and printing</li>
-                            </ul>
-                            <h3>+ This website is made with the <a href="Https://github.com/westoleaboat/my_portfolio" target="_blank">Python Django framework</a></h3>
-                        </div>
-                    </div>
-            </div> -->
+            
         </section>
 
 
@@ -156,10 +140,10 @@
                 <div class="footer-item">
                     <h4>Other projects: </h4>
                     <ul>
-                        <li>Translations</li>
-                        <li>FUD Bustin</li>
+                        <li><a href="https://github.com/westoleaboat/embassy-buildguide-ESP" target="_blank" class="fancylink" style="color: white;">Translation of technical documentation</a> for selfhosting FOSS</li>
+                        <li><a href="https://github.com/westoleaboat/Bitcoin" target="_blank" class="fancylink" style="color: white;">FUD research</a></li>
                         <li>3D Modelling and printing</li>
-                        <li>Selfhosting FOSS software</li>
+                        <!--li>Selfhosting FOSS software</li-->
                         <li>This website is made with the <a href="Https://github.com/westoleaboat/my_portfolio" class="fancylink" target="_blank" style="color: white;">Python Django framework</a></li>
                     </ul>
                     </div>
