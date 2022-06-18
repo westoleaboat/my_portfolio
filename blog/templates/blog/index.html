@@ -42,9 +42,8 @@
                         Time saving is a valuable perk in most work places.
                         This program came out as a response for the paperwork
                         created during production requiring analysis and
-                        sensible data categorization. This executable runs a stopwatch allowing you to create a time-stamp and log your process information
-                        automatically, a PDF report containing raw data is created using the FPDF module, and can be accessed from anywhere online with the Filestack client module.
-                        Save hours of paperwork and automate your process documentation with a single click.
+                        sensible data categorization. This executable runs a stopwatch allowing you to create a time-stamp with the <b>datetime package</b> and log your process information
+                        automatically, a PDF report containing raw data is created using the <b>FPDF module</b>, and can be accessed from anywhere online with the <b>Filestack client package</b>. Tkinter <b>messagebox module</b> is used to interact with the user. Save hours of paperwork and automate your process documentation with a single click.
                         <br>
                         <br>
                         <br>
@@ -62,8 +61,8 @@
                     <img src="{% static 'qr-code-gen.png' %}" class="content-img" alt="qr code reader image"/>
                     <div class="content-info">
                         <p>
-                        Thanks to Python, you can generate a QR code in 4 lines of script, while doing a QR code reader happens to be a bit more tricky. This reader is personally one of the most interesting projects I have done, given the versatility of elements to combine between mouse click events, image manipulation and using computer vision for image analysing.<br>
-                        The script starts by maximizing a transparent window on which the x and y coordinates of the mouse clicks will be used as variables to generate an image with the PIL ImageGrab module, triggering the actual GUI and showing the created image to scan, openCV is used to detect if the image contains a QR code and the data will be displayed. An 'image-file.png' will be created and you may need sudo privileges to run the app, also you will need an existing QR code to scan before executing the script. Once you run the app click the top-left corner followed by clicking the bottom-right corner of the code you want to read.<br>
+                        Thanks to Python, you can generate a QR code in 4 lines of script using the <b>qrtools package</b>, while doing a QR code reader happens to be a bit more tricky. This reader is personally one of the most interesting projects I have done, given the versatility of elements to combine between mouse click events, image manipulation and using computer vision for image analysing.<br>
+                        The script starts by maximizing a transparent window on which the x and y coordinates of the mouse clicks will be used as variables with the <b>mouse package</b>  to generate an image with the <b>PIL ImageGrab package</b>, triggering the actual GUI and showing the created image to scan, <b>openCV</b> is used to detect if the image contains a QR code and the data will be displayed. An 'image-file.png' will be created and you may need sudo privileges to run the app, also you will need an existing QR code to scan before executing the script. Once you run the app click the top-left corner followed by clicking the bottom-right corner of the code you want to read.<br>
                         <br>
                         <br>
                         <br>
@@ -82,7 +81,7 @@
                         <p>
                         As an approach to algorithms in cybersecurity as eliptical curves
                         and encryption, this project is a first step into more complex forms
-                        of data-hashing. Dictionaries and strings were the learning objective to deal with text-data manipulation in Python.
+                        of <b>data-hashing</b>. Dictionaries and strings were the learning objective to deal with text-data manipulation in Python.
                         <br>
                         <br>
                         <br>
@@ -94,13 +93,14 @@
             </div>
 
             <div class="project">
-                <h2 class="aligncenter">SQL database Manager</h1>
+                <h2 class="aligncenter">SQL database Manager</h2>
                 <div class="content">
-                    <!-- {% load static %} -->
+                    {% load static %} 
                     <img src="static/sqlite-db.png" class="content-img" alt="database GUI image"/>
                     <div class="content-info">
                         <p class="text-description">
-                        Databases are an excelent way of storing information, and should not be annoying to deal with. This project also came as a result of the paperwork created while managing a warehouse inventory. When launching the app for the first time a database with a profile table is created using the sqlite3 module. The app is managed through a GUI which displays real time data, you can Delete and Add new elements as you wish, while Editing a record will open a new window allowing you to modify the database record.                        <br>
+                        Databases are an excelent way of storing information, and should not be annoying to deal with. This project also came as a result of the paperwork created while managing a warehouse <b>inventory</b>. When launching the app for the first time a database with a profile table is created using the <b>sqlite3 package</b>. The app is managed through a GUI which displays real time data, you can Delete and Add new elements as you wish, while Editing a record will open a new window allowing you to modify the database record.
+                        <br>
                         <br>
                         <br>
                         <br>
@@ -120,7 +120,7 @@
                         The abilty to control time is a power many would like to have.
                         This project came as one of my earliest executables in Tkinter.
                         A timer was chosen to improve my understanding of loops
-                        and IF statements, collecting time events and updating the displayed text. This same stopwatch format is used among other apps created.
+                        and IF statements, it uses the <b>math</b> and <b>datetime packages</b> to collect time events and updating the displayed text. This same stopwatch format is used among other apps created.
                         <br>
                         <br>
                         <br>
