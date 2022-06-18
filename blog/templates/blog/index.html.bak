@@ -1,0 +1,216 @@
+{% extends "blog/base.html" %}
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{% block title %}Portfolio{% endblock %}</title>
+</head>
+
+<body>
+    <!--div class="container"-->
+    {% block content %}
+    <div class="container">
+        <div class="header">
+            <div style="font-size:40px;"><h1>Hi! my name is Tomas Chacon</h1></div>
+            <h3 style="font-size:25px">A self-taught programmer interested in data analysis, circular economy, eco-friendly energy sources and efficiency on a macro scale.</h3>
+            <div class="column-2" style="margin-left:100px;">
+                <h1>About me</h1>
+                <p style="font-size:25px">
+                I am an Environmental Engineer who started programming as a hobby, I started doing data analysis for my bachelor thesis on microbiology and yeast fermentation, and later developed to other branches as a way to improve my engineering skills. On my free time I deal with Linux Distros, technology research and try to run my own servers. 
+                </p>
+            </div>
+            <div class="column-2">
+            <img src="static/cv-big-photo2.png" alt="large-profile" style="width:350px;"></img>
+            </div>
+        </div>
+
+    <!-- Section 3 - Projects  -->
+
+        <div id="content1">
+            <div class="section-heading">
+                <h1>Projects</h1>
+            </div>
+            <div class="inside-heading">
+                <h1>Automatic work report PDF</h1>
+            </div>
+            <!--div class="grid-content"-->
+            <div class="column-2">
+                <div class="img-grid"> <!--style="width:400px; height:auto;"-->
+                {% load static %}
+                <img src="{% static 'pdf_report.png' %}" alt="pdf report image" style="padding-left:250px;"></img>
+                </div>
+            </div>
+            <!--div class="text-description"--><!-- style="padding-left:250px;"-->
+            <div class="column=2">
+            <p class="text-description">
+            Time saving is a valuable perk in most work places.
+            This program came out as a response for the paperwork
+            created during production requiring analysis and 
+            sensible data categorization. This executable runs a stopwatch, allowing you to create a time-stamp and log your process information 
+            automatically, a PDF report containing raw data is created using the FPDF module, and can be accessed from anywhere online with the filesatck client module. Save hours of paperwork with a single click.
+            <br>
+            <br>
+            <br>
+            <br>
+            <a target="_blank" rel="noopener noreferrer" class="btn-white linkedin" href="https://github.com/westoleaboat/automatic-report-pdf/blob/main/brewlog.py">Source code</a> or <a target="_blank" href="https://replit.com/@chacotasprod/pdf-report?embed=1">Try me online</a> (click the top-right 'Run' button)
+            </p>
+            </div>
+        </div>
+
+        <div id="content2">
+            <div class="section-heading">
+                <!--h1>Projects</h1-->
+            </div>
+            <div class="inside-heading">
+                <h1>QRcode reader</h1>
+            </div>
+            <!--div class="grid-content"-->
+            <div class="column-2">
+                <div class="img-grid"> <!--style="width:400px; height:auto;"-->
+                {% load static %}
+                <img src="{% static 'qr-code-gen.png' %}" alt="pdf report image" style="padding-left:250px;"></img>
+                </div>
+            </div>
+            <!--div class="text-description"--><!-- style="padding-left:250px;"-->
+            <div class="column=2">
+            <p class="text-description">
+            Thanks to Python, you can generate a QR code in 4 lines of script, while doing a QR code reader happens to be a bit more tricky. This reader is personally one of the most interesting projects I have done, given the versatility of elements to combine between mouse click events, image manipulation and using computer vision for image analysing.<br>
+            The script starts by maximizing a transparent window on which the x and y coordinates of the mouse clicks will be used as variables to generate an image with the PIL ImageGrab module, triggering the actual GUI and showing the created image, openCV is used to detect if the image contains a QR code and the data will be displayed. An 'image-file.png' will be created and you may need sudo privileges to run the app, also you will need some existing QR code to scan beforehand. Once you run the app, click the top left corner followed by the bottom right corner of the code you want to read.  
+            <br>
+            <br>
+            <br>
+            <br>
+            <a target="_blank" rel="noopener noreferrer" class="btn-white linkedin" href="https://github.com/westoleaboat/qr-codeReader/blob/main/main.py">Source code</a>
+            </p>
+            </div>
+        </div>
+
+
+
+
+    <!--/div-->
+    <!--/div-->
+
+
+        <div id="content3">
+        <!--h1 class="section-heading">Projects</h1-->
+            <h1 class="inside-heading">Text-to-binary translator</h1>
+            <!--div class="grid-content"-->
+            <div class="column=2">
+                <div class="img-grid"> <!--style="width:400px; height:auto;"-->
+                {% load static %}
+                <img src="{% static 'bnr-trans-img.png' %}" alt="pdf report image" style="padding-left:250px;"></img>
+                </div>
+            </div>
+            <div class="column=2">
+            <p class="text-description"><!-- style="padding-left:250px;"-->
+            As an approach to algorithms in cybersecurity as eliptical curves 
+            and encryption, this project is a first step into more complex forms
+            of data-hashing. Dictionaries and strings were the learning objective to deal with text-data manipulation in Python.
+            <br>
+            <br>
+            <br>
+            <br>
+            <a target="_blank" rel="noopener noreferrer" class="btn-white linkedin" href="https://github.com/westoleaboat/binary-translator-gui/blob/main/translator.py">Source code</a> or <a target="_blank" href="https://replit.com/@chacotasprod/binary-text?embed=1">Try me online</a> (click the top-right 'Run' button)
+            </p>
+            </div>
+        </div>
+
+        <div id="content4">
+        <!--h1 class="section-heading">Projects</h1-->
+            <h1 class="inside-heading">SQL database Manager</h1>
+            <!--div class="grid-content"-->
+            <div class="column=2">
+                <div class="img-grid"> <!--style="width:400px; height:auto;"-->
+                {% load static %}
+                <img src="static/sqlite-db.png" alt="database GUI image" style="padding-left:190px;"></img>
+                </div>
+            </div>
+            <div class="column=2">
+            <p class="text-description"><!-- style="padding-left:250px;"-->
+            Databases are an excelent way of storing information, and should not be annoying to deal with. This project also came as a result of the paperwork created for managing a warehouse. When launching the app for the first time a database with a profile table is created using the sqlite3 module. The app is managed through a GUI which displays real time data, you can Delete and Add information as you wish, while Editing a record will open in a new window, allowing you to modify database records.
+            <br>
+            <br>
+            <br>
+            <br>
+            <a target="_blank" rel="noopener noreferrer" class="btn-white linkedin" href="https://github.com/westoleaboat/sqlite-database/blob/main/main.py">Source code</a>
+            </p>
+            </div>
+        </div>
+
+        <div id="content5">
+        <!--h1 class="section-heading">Projects</h1-->
+            <h1 class="inside-heading">Stopwatch & Lap counter</h1>
+            <!--div class="grid-content"-->
+            <div class="column=2">
+                <div class="img-grid"> <!--style="width:400px; height:auto;"-->
+                {% load static %}
+                <img src="{% static 'timer-img.png' %}" alt="pdf report image" style="padding-left:450px;"></img>
+                </div>
+            </div>
+            <div class="column=2">
+            <p class="text-description"><!-- style="padding-left:250px;"-->
+            The abilty to control time is a power many would like to have.
+            This project came as one of my earliest executables in Tkinter.
+            A timer was chosen to improve my understanding of loops and IF statements, collecting time events and updating the label text displayed. This same stopwatch format is used among other apps created.  
+            <br>
+            <br>
+            <br>
+            <br>
+            <a target="_blank" rel="noopener noreferrer" class="btn-white linkedin" href="https://github.com/westoleaboat/python_timer/blob/main/timer.py">Source code</a>
+            </p>
+            </div>
+        </div>
+
+        <div class="column-1 project-3">
+            <h2 class="project-text">More</h2>
+                <div class="overlay">
+                    <div class="project-3-text">
+                        <h2>I do...</h2>
+                        <ul>
+                            <li>Translate <a href="https://github.com/westoleaboat/embassy-buildguide-ESP" target="_blank">technical documentation</a> for self-hosting</li>
+                            <li>FUD <a href="https://github.com/westoleaboat/Bitcoin" target="_blank">research</a> about Bitcoin technology</li>
+                            <li>3D modeling and printing</li>
+                        </ul>
+                        <h3>+ This website is made with the <a href="Https://github.com/westoleaboat/my_portfolio" target="_blank">Python Django framework</a></h3>
+                    </div>
+                </div>
+        </div>
+
+        <table class="table-footer">
+            <tr>
+                <td>tomaschacon732@hotmail.com</td>
+                <td>
+                    <a><img src="static/email-logo1white.png" alt="email logo" style="height:40px"></img>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>+358 452200289</td>
+                <td>
+                    <a><img src="static/phone-logo1white.png" alt="phone logo" style="height:40px"></img>
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <a href="https://github.com/westoleaboat" target="_blank">
+                    <img src="static/GitHub-Mark-Light-32px.png" alt="github logo">
+                    </img>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://www.linkedin.com/in/tomas-chacon-76560993/" target="_blank">
+                    <img src="static/linkedin-logo1white.png" alt="linkedin logo" style="height:40px">
+                    </img>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+        {% endblock %}
+    <!--/div-->
+</body>
+</html>
+

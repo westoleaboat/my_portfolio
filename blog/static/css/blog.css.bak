@@ -1,140 +1,258 @@
-header {
-    text-align: center;
-    margin-top: 150px;
-    margin-bottom: 100px;
-}
-
+/* General Website Style rules */
 body {
-    margin-bottom: 20px;
-    height: 100%;
+    font-family: "Helvetica", Sans-Serif;
 }
 
-footer {
-    text-align: center;
-    width: 100%;
-    color: white;
-    background: black;
-    margin-bottom: 0;
-    position: absolute;
+.container{
+    display:grid;
+    /*height:100vh;*/
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr 0.7fr 0.7fr 0.7fr 0.7fr 0.2fr;
+    grid-template-areas:
+      "header header header header"
+      "content1 content1 content1 content1"
+      "content2 content2 content2 content2"
+      "content3 content3 content3 content3"
+      "content4 content4 content4 content4"
+      "content5 content5 content5 content5"
+      "more more more more"
+      "footer footer footer footer";
+    grid-gap:0.2rem;
 }
 
-h1 {
-    font-family: "Lucida Console", monospace;
+.header {
+    grid-area:header;
+    background:#f9f7f7;
+    padding:40px;
+    margin:30px;
+    text-align:center;
 }
 
-h3 {
-    font-family: "Courier New", monospace;
-    font-size: 19px;
+.column-2{
+    float:left;
+    width:45;
 }
 
-.block-container {
-    background-color: lightblue
+.section-heading{
+    text-align:center;
 }
 
+.inside-heading{
 
-.welcome-container {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    padding-left: 6em;
-    position: relative;
 }
 
-.title {
-    text-align: left;
-    /*font-family: "Ubuntu", sans-serif;*/
+.img-grid{
+    float:left;
+    width:40%;
+    height:auto;
+}
 
+.text-description{
+    width:40%;
+    height:auto;
+    float:right;
+    padding-right:140px;
+    font-size:25px;
+}
+
+grid-content{
+    display:grid;
+    padding:2rem;
+    grid-template-columns:400px 1fr;
+    gap: 1rem;
+    align-items:center;
+    max-width:1200px;
+    margin:0 auto;
+    font:500 100%/1.5 system-ui;
+}
+
+#content1{
+    grid-area:content1;
+}
+#content2{
+    grid-area:content2;
+}
+#content3{
+    grid-area:content3;
+}
+#content4{
+    grid-area:content4;
+}
+#content5{
+    grid-area:content5;
+}
+
+.footer{
+    /*grid-area:footer;*/
+}
+
+a {
+    color: #112d4e;
+}
+
+img {
+    /*display:block;*/
+    /*max-width:100%;*/
+    /*height:auto;*/
+    /*max-height:22rem;*/
+}
+
+.overlay {
+    position:absolute;
+    bottom:0;
+    left:100%;
+    right:0;
+    background-color:#008CBA;
+    overflow: hidden;
+    width:0;
+    height:100%;
+    transition: .5s ease;
 }
 
 .btn-white {
     color: #fff;
+/*#FF33FC*/
     text-decoration: none;
     border: 3px solid #fff;
     padding: .7rem;
     text-transform: uppercase;
     font-weight: 600;
-    background-color: #f7b;
+    background-color: #FF33FC;
     cursor: pointer;
-    margin-top; .8rem;
-    font-family: "DM sans", sans-serif;
+    margin-top: .8rem;
+    font-family: "DM Sans",sans-serif;
+    font-size:15px;
+}
+
+.linkedin {
+    width:100%;
 }
 
 
-.column {
+.graph-text {
+    font-size:20px;
+    /*font-weight:bold;*/
+    line-height:2;
+    text-align:left;
+    text-justify: inter-word;
+    padding-left:70px;
+    /*padding-top: 100px;*/
+}
+
+/* Create two eqcual columns that float next to each other */
+.column-2 {
     float: left;
-    width: 50%;
-}
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.overlay {
-    z-index: 9;
-
-}
-
-.color-row {
-    background-color: #72efe9;
-    height: 242px;
-    width: 100%;
-    margin-top: -70px;
-    position: relative;
-    text-align: right;
+    width: 45%;
 }
 
 
-.menu {
+/* Section 3 projects*/
+
+
+.inside-heading {
+    /*margin-left: 380px;*/
     text-align: center;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto;
-
-}
-
-.grid-item {
-    background-color: rgba(225, 225, 255, 0.8);
-    /*border: 1px solid rgba(0, 0, 0, 0.8);*/
-    padding-top: 20px;
-    /*padding-bottom: 0px;*/
+.project-text {
     text-align: center;
+    font-size: 60px;
 }
 
-.menu-item {
-    /*font-size: 1.5rem;*/
-    padding: 10px;
-    text-align: center;
+/* Hover classes for individual project boxes */
+
+.project-3:hover .overlay {
+    width:100%;
+    left:0;
 }
 
-.content-title {
-    text-align: center;
+.project-3-text {
+    white-space: nowrap;
+    color:white;
+    font-size:20px;
+    position:absolute;
+    overflow:hidden;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
 
-.content-item {
-    padding: 20px;
-    margin: 5px;
-    /*background-color: burlywood;*/
-    border-radius: 10px;
+/* table formatting */
+/*.table-style{
+    text-align:center;
+    grid-area:table-style;
+    font-size:30px;
+}*/
+
+.table-footer {
+    /*text-align:center;*/
+    /*margin:100px;*/
+    padding:25px;
+    margin:auto;
+    width:30%;
+    grid-area:footer;
+    font-size:30px;
 }
 
-.topic-container {
-    justify-content: center;
-    background: grey;
+/* wide column */
+
+.column-1 {
+    grid-area:more;
+    width: 70%;
+    height: auto;
+    position:relative;
+    /*padding-top: 10%;*/
+    padding: 25px;
+    /*padding-bottom: 70px;*/
     margin: auto;
-    height: 1550px;
-    width: 1200px;
-    height: 100%;
+    /*margin-bottom: 50px;*/
+    /*margin-top: 75px;*/
+    /*margin-left: 332.5;*/
+    /*margin-left: 50px;*/
+    background-color: #209BFF;
 }
 
-.topic-container-small {
-    text-align: center;
-    justify-content: center;
-    background: white;
+/* fifth section education & skill */
+
+.column-2a {
+    float: left;
+    width: 45%;
+    padding: 40px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 60px;
+    height: 450px;
+    margin: 40px;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    background-color: white;
+
+    /*background-color:white;*/
+}
+
+
+/* Footer */
+
+/*a.menu:hover {
+    background-color:yellow;
+    font-size:20px;
+}*/
+
+.icon-style {
+    height:40px;
+    margin-left:20px;
+    margin-top:5px;
+}
+
+.icon-style:hover {
+    background-color: yellow;
+    padding:5px;
+}
+
+@media only screen and (max-width:550px){
+    .text-description{
+        padding-right:0px;
+    }
 }
