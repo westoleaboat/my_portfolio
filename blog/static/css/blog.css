@@ -25,6 +25,7 @@ body {
     font-size: 25px;
     max-width: 70vw;
     justify-self: center;
+    padding-bottom: 20px;
 }
 
 .profile {
