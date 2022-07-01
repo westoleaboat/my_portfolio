@@ -1,235 +1,170 @@
+
 {% extends "blog/base.html" %}
-<!DOCTYPE HTML>
+{% comment %} {% load static %} {% endcomment %}
 
-<body style="background: linear-gradient(180.3deg, rgb(221, 221, 221) 5.5%, rgb(110, 136, 161) 90.2%);">
 
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>{% block title %}Portfolio{% endblock %}</title>
-</head>
+</html>
 
 <body>
     {% block content %}
-        <section class="header">
-            <h1>Hi! my name is Tomas Chacon</h1>
-            <h3>A self-taught Python programmer from Kokkola interested in data analysis, circular economy, eco-friendly energy sources and efficiency on a macro scale.</h3>
-            <div class="profile">
-                <div class="profile-info">
-                    <h1>About me</h1>
-                    <p style="font-size:25px">
-                    I am an Environmental Engineer who started programming Python for data analysis on my bachelor thesis about microbiology and yeast fermentation, and later developed to other branches as a way to improve my engineering skills. On my free time I deal with Linux Distros, technology research and try to run my own servers.
-                    </p>
-                </div>
-                <div class="profile-img">
-                    <!--{% load static %} -->
-                    <!--img src="{% static 'cv-big-photo2.png' %}" alt="large-profile"></img--> 
+    <!-- header -->
+    <header>
+        <div class="h__container">
+            <h1>Hi! my name is <span>Tomas Chacon</span></h1>
+            <h3>A self-taught Python programmer interested in data analysis, circular economy, eco-friendly energy sources and efficiency on a macro scale</h3>
+        </div>
+        <a href="#about" class="h__arrow-down"></a>
+    </header>
+    <!-- about section -->
+    <section class="about">
+        <div id="about" style="color: #ffffffda">.</div>
+        <h2>About me</h2>
+        <div class="a__container">
+            <p class="a__paragraph">I am an Environmental Engineer who started programming Python for data analysis on my bachelor thesis about microbiology and yeast fermentation, and later developed to other branches as a way to improve my engineering skills. On my free time I deal with Linux Distros, technology research and try to run my own servers.</p>
+            <div class="a__image">
+                <img src="static/css/assets/cv-big-photo2.png" alt="profile-image">
+            </div>
+        </div>
+    </section>
+    <!-- projects section -->
+    <section class="projects">
+        <h2>Projects</h2>
+        <!-- single project -->
+        <div class="p__project">
+            <div class="p__richtext">
+                <h3>Automatic work report PDF</h3>
+                <p>Time saving is a valuable perk in most work places.
+                    This program came out as a response for the paperwork
+                    created during production requiring analysis and
+                    sensible data categorization. This executable runs a stopwatch allowing you to create a time-stamp with the <b>datetime package</b> and log your process information
+                    automatically, a PDF report containing raw data is created using the <b>FPDF module</b>, and can be accessed from anywhere online with the <b>Filestack client package</b>. Tkinter <b>messagebox module</b> is used to interact with the user. Save hours of paperwork and automate your process documentation with a single click.
+                </p>
+                <div class="p__links">
+                    <a class="p__source-code" href="">Source code</a>
+                    <a class="p__see-live" href="">Try online</a>
                 </div>
             </div>
-        </section>
-
-    <!-- Section 3 - Projects  -->
-        <section class="projects">
-            <h1 class="aligncenter">Projects</h1>
-            <div class="project">
-                <h2 class="aligncenter">Automatic work report PDF</h2>
-                <div class="content">
-                    {% load static %} 
-                    <img class="content-img" src="{% static 'pdf_report.png' %}" alt="pdf report image"></img>
-
-                    <div class="content-info">
-                        <p>
-                        Time saving is a valuable perk in most work places.
-                        This program came out as a response for the paperwork
-                        created during production requiring analysis and
-                        sensible data categorization. This executable runs a stopwatch allowing you to create a time-stamp with the <b>datetime package</b> and log your process information
-                        automatically, a PDF report containing raw data is created using the <b>FPDF module</b>, and can be accessed from anywhere online with the <b>Filestack client package</b>. Tkinter <b>messagebox module</b> is used to interact with the user. Save hours of paperwork and automate your process documentation with a single click.
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <a target="_blank" rel="noopener noreferrer" class="fancylink" href="https://github.com/westoleaboat/automatic-report-pdf">Source code</a> or <a target="_blank" class="fancylink" href="https://replit.com/@chacotasprod/pdf-report?embed=1">Try me online</a> (click the top-right 'Run' button)
-                        </p>
-                    </div>
+            <div class="p__image">
+                <img src="static/css/assets/projects/pdf_report.png" alt="pdf-report">
+            </div>
+        </div>
+        <!-- single project -->
+        <div class="p__project">
+            <div class="p__richtext">
+                <h3>Pandas DataFrame GUI</h3>
+                <p>
+                    Data analysis is the main reason why I learnt Python. My working experience taught me that you can have lots of data, but knowing how to extract information is a different thing! This is a script in where a <b>random Pandas DataFrame</b> is created and plotted using <b>matplotlib</b>. A new set of values is created every second and the plot is updated automatically (after you press the button). The main goal in here was to <b>plot</b> the DataFrame graph <b>inside</b> the <b>Tkinter GUI</b> with the <b>FigureCanvasTkAgg module</b> from <b>matplotlib.backends.backend_tkagg</b>, as to have an executable program that allows you to work and generate plots, further than just showing a graph with the <i>plt.show()</i> function.
+                </p>
+                <div class="p__links">
+                    <a class="p__source-code" href="">Source code</a>
                 </div>
             </div>
-
-
-            <div class="project">
-                <h2 class="aligncenter">Pandas DataFrame GUI</h2>
-                <div class="content">
-                    {% load static %} 
-                    <img class="content-img" src="{% static 'pandas-df.png' %}" alt="pandas dataframe GUI"></img>
-
-                    <div class="content-info">
-                        <p>
-                        Data analysis is the main reason why I learnt Python. My working experience taught me that you can have lots of data, but knowing how to extract information is a different thing! This is a script in where a <b>random Pandas DataFrame</b> is created and plotted using <b>matplotlib</b>. A new set of values is created every second and the plot is updated automatically (after you press the button). The main goal in here was to <b>plot</b> the DataFrame graph <b>inside</b> the <b>Tkinter GUI</b> with the <b>FigureCanvasTkAgg module</b> from <b>matplotlib.backends.backend_tkagg</b>, as to have an executable program that allows you to work and generate plots, further than just showing a graph with the <i>plt.show()</i> function. 
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <a target="_blank" rel="noopener noreferrer" class="fancylink" href="https://github.com/westoleaboat/matplotlib-GUI-generator">Source code</a>                        </p>
-                    </div>
+            <div class="p__image">
+                <img src="static/css/assets/projects/pandas-df.png" alt="pandas-df">
+            </div>
+        </div>
+        <!-- single project -->
+        <div class="p__project">
+            <div class="p__richtext">
+                <h3>QRcode reader</h3>
+                <p>
+                    Thanks to Python, you can generate a QR code in 4 lines of script using the <b>qrtools package</b>, while doing a QR code reader happens to be a bit more tricky. This reader is personally one of the most interesting projects I have done, given the versatility of elements to combine between mouse click events, image manipulation and using computer vision for image analysing.<br>
+                        The script starts by maximizing a transparent window on which the x and y coordinates of the mouse clicks will be used as variables with the <b>mouse package</b>  to generate an image with the <b>PIL ImageGrab package</b>, triggering the actual GUI and showing the created image to scan, <b>openCV</b> is used to detect if the image contains a QR code and the data will be displayed. An 'image-file.png' will be created and you may need sudo privileges to run the app, also you will need an existing QR code to scan before executing the script. Once you run the app click the top-left corner followed by clicking the bottom-right corner of the code you want to read.
+                </p>
+                <div class="p__links">
+                    <a class="p__source-code" href="">Source code</a>
                 </div>
             </div>
-
-
-
-
-            <div class="project">
-                <h2 class="aligncenter">QRcode reader</h2>
-                <div class="content">
-                        <!-- {% load static %} -->
-                    <img src="{% static 'qr-code-gen.png' %}" class="content-img" alt="qr code reader image"/>
-                    <div class="content-info">
-                        <p>
-                        Thanks to Python, you can generate a QR code in 4 lines of script using the <b>qrtools package</b>, while doing a QR code reader happens to be a bit more tricky. This reader is personally one of the most interesting projects I have done, given the versatility of elements to combine between mouse click events, image manipulation and using computer vision for image analysing.<br>
-                        The script starts by maximizing a transparent window on which the x and y coordinates of the mouse clicks will be used as variables with the <b>mouse package</b>  to generate an image with the <b>PIL ImageGrab package</b>, triggering the actual GUI and showing the created image to scan, <b>openCV</b> is used to detect if the image contains a QR code and the data will be displayed. An 'image-file.png' will be created and you may need sudo privileges to run the app, also you will need an existing QR code to scan before executing the script. Once you run the app click the top-left corner followed by clicking the bottom-right corner of the code you want to read.<br>
-                        <br>
-                        <br>
-                        <br>
-                        <a target="_blank" rel="noopener noreferrer" class="fancylink" href="https://github.com/westoleaboat/qr-codeReader">Source code</a>
-                        </p>
-                    </div>
-                </div>
+            <div class="p__image">
+                <img src="static/css/assets/projects/qr-code-gen.png" alt="qr-code-gen">
             </div>
-
-            <div class="project">
-                <h2 class="aligncenter">Shortest-path finder</h2>
-                <div class="content">
-                        <!-- {% load static %} -->
-                        <img src="{% static 'shortest-path.png' %}" class="content-img" alt="Random node network"/>
-                    <div class="content-info">
-                        <p>
-                        Networks are objects that contain nodes and edges (between a pair of nodes) that can be used to represent a wide variety of real-world situations. A common problem where these appear is in finding the shortest route between two nodes in a network. For instance, this could be the shortest distance between two cities, where the nodes represent the cities and the edges are roads connecting them. In this case, the weights of the edges would be their lengths.<br><br>
+        </div>
+        <!-- single project -->
+        <div class="p__project">
+            <div class="p__richtext">
+                <h3>Shortest-path finder</h3>
+                <p>
+                    Networks are objects that contain nodes and edges (between a pair of nodes) that can be used to represent a wide variety of real-world situations. A common problem where these appear is in finding the shortest route between two nodes in a network. For instance, this could be the shortest distance between two cities, where the nodes represent the cities and the edges are roads connecting them. In this case, the weights of the edges would be their lengths.<br><br>
                         This code uses primarily the <b>NetworkX package</b> for working with trees and networks, aided by the <b>Matplotlib package</b> to plot the figure. The default algorithm for finding the shortest path between two nodes is <b>Dijkstra's algorithm</b> and can be used for problems as the <i>traveling salesperson problem</i> and the <i>route inspection problem.</i>
                         The red color lines are the examined edges between nodes 7 and 9, and in contrast with blue color is the "shortest path", meaning "fewest edges". Weight is an optional keyword argument added to make some routes preferable to others.
-
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <a target="_blank" rel="noopener noreferrer" class="fancylink" href="https://github.com/westoleaboat/shortest-path-node">Source code</a>
-                        </p>
-                    </div>
+                </p>
+                <div class="p__links">
+                    <a class="p__source-code" href="">Source code</a>
                 </div>
             </div>
-
-            <div class="project">
-                <h2 class="aligncenter">Text-to-binary translator</h2>
-                <div class="content">
-                        <!-- {% load static %} -->
-                        <img src="{% static 'bnr-trans-img.png' %}" class="content-img" alt="text to binary image"/>
-                    <div class="content-info">
-                        <p>
-                        As an approach to algorithms in cybersecurity as eliptical curves
+             <div class="p__image">
+                <img src="static/css/assets/projects/shortest-path.png" alt="shortest-path">
+            </div>
+        </div>
+        <!-- single project -->
+        <div class="p__project">
+            <div class="p__richtext">
+                <h3>Text-to-binary translator</h3>
+                <p>
+                    As an approach to algorithms in cybersecurity as eliptical curves
                         and encryption, this project is a first step into more complex forms
                         of <b>data-hashing</b>. Dictionaries and strings were the learning objective to deal with text-data manipulation in Python.
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <a target="_blank" rel="noopener noreferrer" class="fancylink" href="https://github.com/westoleaboat/binary-translator-gui">Source code</a> or <a target="_blank" class="fancylink" href="https://replit.com/@chacotasprod/binary-text?embed=1">Try me online</a> (click the top-right 'Run' button)
-                        </p>
-                    </div>
+                </p>
+                <div class="p__links">
+                    <a class="p__source-code" href="">Source code</a>
+                    <a class="p__see-live" href="">Try online</a>
                 </div>
             </div>
-
-
-
-
-            <div class="project">
-                <h2 class="aligncenter">SQL database Manager</h2>
-                <div class="content">
-                    {% load static %} 
-                    <img src="static/sqlite-db.png" class="content-img" alt="database GUI image"/>
-                    <div class="content-info">
-                        <p class="text-description">
-                        Databases are an excelent way of storing information, and should not be annoying to deal with. This project also came as a result of the paperwork created while managing a warehouse <b>inventory</b>. When launching the app for the first time a database with a profile table is created using the <b>sqlite3 package</b>. The app is managed through a GUI which displays real time data, you can Delete and Add new elements as you wish, while Editing a record will open a new window allowing you to modify the database record.
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <a target="_blank" rel="noopener noreferrer" class="fancylink" href="https://github.com/westoleaboat/sqlite-database">Source code</a>
-                        </p>
-                    </div>
+             <div class="p__image">
+                <img src="static/css/assets/projects/bnr-trans-img.png" alt="bnr-trans-img">
+            </div>
+        </div>
+        <!-- single project -->
+        <div class="p__project">
+            <div class="p__richtext">
+                <h3>SQL database Manager</h3>
+                <p>
+                    Databases are an excelent way of storing information, and should not be annoying to deal with. This project also came as a result of the paperwork created while managing a warehouse <b>inventory</b>. When launching the app for the first time a database with a profile table is created using the <b>sqlite3 package</b>. The app is managed through a GUI which displays real time data, you can Delete and Add new elements as you wish, while Editing a record will open a new window allowing you to modify the database record.
+                </p>
+                <div class="p__links">
+                    <a class="p__source-code" href="">Source code</a>
                 </div>
             </div>
+            <div class="p__image">
+                <img src="static/css/assets/projects/sqlite-db.png" alt="sqlite-database">
+            </div>
+        </div>
 
-            <div class="project">
-                <h2 class="aligncenter">Stopwatch & Lap counter</h2>
-                <div class="content">
-                    <!-- {% load static %} -->
-                    <img src="{% static 'timer-img.png' %}" class="content-img" alt="stopwatch and lap counter image"/>
-                    <div class="content-info">
-                        <p class="text-description"><!-- style="padding-left:250px;"-->
-                        The abilty to control time is a power many would like to have.
+        <!-- single project -->
+        <div class="p__project">
+            <div class="p__richtext">
+                <h3>Stopwatch & Lap counter</h3>
+                <p>
+                    The abilty to control time is a power many would like to have.
                         This project came as one of my earliest executables in Tkinter.
                         A timer was chosen to improve my understanding of loops
                         and IF statements, it uses the <b>math</b> and <b>datetime packages</b> to collect time events and updating the displayed text. This same stopwatch format is used among other apps created.
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <a target="_blank" rel="noopener noreferrer" class="fancylink" href="https://github.com/westoleaboat/python_timer">Source code</a>
-                        </p>
-                    </div>
+                </p>
+                <div class="p__links">
+                    <a class="p__source-code" href="">Source code</a>
                 </div>
             </div>
-
-            
-        </section>
-
-
-        <footer>
-            <div class="footer-content">
-                <div class="footer-item">
-                    <h4>Other projects: </h4>
-                    <ul>
-                        <li><a href="https://github.com/westoleaboat/embassy-buildguide-ESP" target="_blank" class="fancylink" style="color: white;">Translation of technical documentation</a> for selfhosting FOSS</li>
-                        <li><a href="https://github.com/westoleaboat/Bitcoin" target="_blank" class="fancylink" style="color: white;">FUD research</a></li>
-                        <li>3D Modelling and printing</li>
-                        <!--li>Selfhosting FOSS software</li-->
-                        <li>This website is made with the <a href="Https://github.com/westoleaboat/my_portfolio" class="fancylink" target="_blank" style="color: white;">Python Django framework</a></li>
-                    </ul>
-                    </div>
-                <div class="footer-item">
-                    <h4>Contact me:</h4>
-                    <div>
-                        <a>
-                            <img src="static/email-logo1white.png" alt="email logo" style="height:25px"/>
-                        </a><span> tomaschacon732@hotmail.com</span>
-                    </div>
-                    <br>
-                    <div>
-                        <a>
-                            <img src="static/phone-logo1white.png" alt="phone logo" style="height:35px"/>
-                        </a><span> +358 452200289</span>
-                    </div>
-                    <br>
-                    <div>
-                        <a href="https://github.com/westoleaboat" target="_blank">
-                            <img src="static/GitHub-Mark-Light-32px.png" alt="github logo"></img></a>
-                        <span>westoleaboat</span>
-                    </div>
-                    <br>
-                    <div>
-                        <a href="https://www.linkedin.com/in/tomas-chacon-76560993/" target="_blank">
-                            <img src="static/linkedin-logo1white.png" alt="linkedin logo" style="height:35px"></img></a>
-                        <span>Tomas Chacon</span>
-                    </div>
-                </div>
+            <div class="p__image">
+                <img src="static/css/assets/projects/timer-img.png" alt="time-stamp">
             </div>
-        </footer>
-        <!-- {% endblock %} -->
-    <!--/div-->
-</body>
-</html>
+        </div>
 
+    </section>
+
+    <footer>
+        <div class="f__contact-info">
+            <h3>Contact info</h3>
+            <p><a href="tel:+358452200289">+358452200289</a></p>
+            <p><a href="mailto:tomaschacon732@hotmail.com">tomaschacon732@hotmail.com</a></p>
+        </div>
+        <div class="f__social-media">
+            <a href="https://github.com/westoleaboat" target="_blank"><img src="static/css/assets/social/icons8-github-30.png" alt="github_logo"></a>
+            <a href="https://www.linkedin.com/in/tomas-chacon-76560993/"><img src="static/css/assets/social/icons8-linkedin-circled-30.png" target="_blank" alt="linkedin_logo"></a>
+            <a href="https://www.youtube.com/user/chacotasprod"><img src="static/css/assets/social/icons8-youtube-squared-30.png" target="_blank" alt="youtube_logo"></a>
+        </div>
+        <div class="f__copyright">© 2022 - Developed by Tomas Chacon</div>
+    </footer>
+
+    {% endblock %}
 </body>
-    <!--footer>
-        <p>Created by Tomas Chacon, © 2022 >
-        <a href="https://github.com/westoleaboat" target="_blank">
-            <img src="static/githublogo.png" alt="logo"></img></a>
-    </footer-->
 </html>
